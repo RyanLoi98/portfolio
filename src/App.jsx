@@ -9,6 +9,16 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Work />
+        <Feedback />
+
+        <div className = "relative z-0"> 
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
     </BrowserRouter>
   )
