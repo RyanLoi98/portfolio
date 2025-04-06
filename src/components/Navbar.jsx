@@ -10,9 +10,9 @@ const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     return (
-        <nav className={`${styles.paddingX} w-full flex items-center py-2 top-10 z-50 bg-primary`}>            
+        <nav className={`${styles.paddingX} w-full flex items-end py-2 top-10 z-50 bg-primary`}>            
 
-            <div className = "w-full flex justify-between items-center max-w-full mx-auto">
+            <div className = "w-full flex justify-between items-center max-w-7xl mx-auto">
                 <Link to="/" className = "flex items-center gap-2" 
                     onClick = {() => {setActive(""); window.scrollTo(0, 0);}} 
                 >
