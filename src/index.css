@@ -10,9 +10,9 @@
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
 
-  --breakpoint-xs: 450px;
-  --breakpoint-sm: 750px;
-
+  --breakpoint-xs: 550px;
+  --breakpoint-xxs: 425px;
+  
   --shadow-card: 0px 35px 120px -15px rgb(33,30,53);
 
   --background-image-hero-pattern: url('/src/assets/herobg.png');
