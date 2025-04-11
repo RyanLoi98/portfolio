@@ -36,8 +36,8 @@ const Computers = ({ screenWidth }) => {
                 screenWidth >= 768 ? [0, -2.0, -0.75] :
                 screenWidth >= 640 ? [0, -1.75, -0.70] :
                 screenWidth >= 550 ? [0, -1.50, -0.60] :
-                screenWidth >= 425 ? [0, -1.00, -0.45] : 
-                screenWidth >= 350 ? [0, -0.55, -0.35] : 
+                screenWidth >= 425 ? [0, -1.35, -0.45] : 
+                screenWidth >= 350 ? [0, -1.25, -0.35] : 
                 screenWidth >= 300 ? [0, -0.75, -0.35] : [0, -0.75, -0.30]}     
 
         rotation={[-0.01, -0.2, -0.1]}
