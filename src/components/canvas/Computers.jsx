@@ -19,8 +19,8 @@ const Computers = ({isMobile}) => {
       shadow-mapSize={1024}/>
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -2.5, -1.5]}
+        scale={isMobile ? 0.5 : 0.75}
+        position={isMobile ? [0, -3, -0.65] : [0, -2.5, -1.0]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -31,8 +31,8 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);  
 
   useEffect( () => {
-    // Event listener that checks if the screen size is less than 500px
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    // Event listener that checks if the screen size is less than 850px
+    const mediaQuery = window.matchMedia('(max-width: 850px)');
 
     // .matches is a property of the MediaQueryList object that tells you if the media query you wrote is currently true or false
     // This sets the initial state of isMobile to true or false
