@@ -4,23 +4,42 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({isMobile}) => {
+const Computers = ({ screenWidth }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
-      <hemisphereLight intensity={2} groundColor='black' />
+      <hemisphereLight intensity={2} groundColor="black" />
       <pointLight intensity={4} />
-      <spotLight position = {[-20, 50, 10]}
-      angle={0.12}
-      intensity={10000}
-      penumbra={1}
-      castShadow
-      shadow-mapSize={1024}/>
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        intensity={10000}
+        penumbra={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [0, -3, -0.65] : [0, -2.5, -1.0]}
+
+        /* Changing scale based on screen width in px eg. >= 1024 px -> 0.75 scale,  >=768 px but <1025 px -> 0.65 scale, all else 0.45 scale*/
+        scale ={screenWidth >= 1024 ? 0.75 : 
+                screenWidth >= 768 ? 0.60 :
+                screenWidth >= 640 ? 0.50 :
+                screenWidth >= 550 ? 0.45 :
+                screenWidth >= 425 ? 0.35 :
+                screenWidth >= 350 ? 0.30 : 
+                screenWidth >= 300 ? 0.22 : 0.20}
+
+        /*Changing positioning of the computer model based on screen width*/        
+        position ={screenWidth >= 1024 ? [0, -2.5, -1.0] : 
+                screenWidth >= 768 ? [0, -2.0, -0.75] :
+                screenWidth >= 640 ? [0, -1.75, -0.70] :
+                screenWidth >= 550 ? [0, -1.50, -0.60] :
+                screenWidth >= 425 ? [0, -1.00, -0.45] : 
+                screenWidth >= 350 ? [0, -0.55, -0.35] : 
+                screenWidth >= 300 ? [0, -0.75, -0.35] : [0, -0.75, -0.30]}     
+
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -28,34 +47,27 @@ const Computers = ({isMobile}) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);  
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  useEffect( () => {
-    // Event listener that checks if the screen size is less than 850px
-    const mediaQuery = window.matchMedia('(max-width: 850px)');
+  useEffect(() => {
+    // function that sets the screen width to the screenWidth state
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
 
-    // .matches is a property of the MediaQueryList object that tells you if the media query you wrote is currently true or false
-    // This sets the initial state of isMobile to true or false
-    setIsMobile(mediaQuery.matches);
+    // Set initial screen width
+    handleResize();
 
-    // callback function that will be called whenever the screen size changes
-    const handleMediaQueryChange = (event) =>{
-      setIsMobile(event.matches);
-     }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
 
-     // add the callback function as an even listener to changes in the media query
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    // Clean up by removing the listener to avoid memory leaks
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-     // cleanup function to prevent memory leaks
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-  }, [])
-
-  
   return (
     <Canvas
-      frameLoop='demand'
+      frameLoop="demand"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
@@ -67,7 +79,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile}/>
+        <Computers screenWidth={screenWidth} />
       </Suspense>
 
       <Preload all />
