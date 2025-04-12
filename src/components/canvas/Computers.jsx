@@ -13,20 +13,18 @@ const Computers = ({ screenWidth }) => {
   // Ref to the computer model
   const computerRef = useRef();
 
-  // Control rotation state
-  const rotationSpeed = 0.02; // adjust speed here
+  // Rotation speed and tracking current rotation
+  const rotationSpeed = 0.02;
   const targetRotation = Math.PI * 2;
-  let currentRotation = 0;
+  const currentRotation = useRef(0);
 
-  // this effect ensures the model does not rotate on load, and there is a small delay
+  // this effect ensures the model does not rotate on load, and there is a small delay of 850ms
   useEffect(() => {
     if (computer && computer.scene && computerRef.current) {
-      // Delay 850ms before starting rotation
       const timer = setTimeout(() => {
         setFirstRotation(true);
       }, 850);
 
-      // Cleanup timeout if component unmounts early
       return () => clearTimeout(timer);
     }
   }, [computer]);
@@ -36,15 +34,15 @@ const Computers = ({ screenWidth }) => {
     if (
       firstRotation &&
       computerRef.current &&
-      currentRotation < targetRotation
+      currentRotation.current < targetRotation
     ) {
       const deltaRotation = Math.min(
         rotationSpeed,
-        targetRotation - currentRotation
+        targetRotation - currentRotation.current
       );
       computerRef.current.rotation.y += deltaRotation;
-      currentRotation += deltaRotation;
-    } else {
+      currentRotation.current += deltaRotation;
+    } else if (firstRotation) {
       setFirstRotation(false);
     }
   });
@@ -64,7 +62,6 @@ const Computers = ({ screenWidth }) => {
       <primitive
         ref={computerRef}
         object={computer.scene}
-        /* Changing scale based on screen width in px eg. >= 1024 px -> 0.75 scale,  >=768 px but <1025 px -> 0.65 scale, all else 0.45 scale*/
         scale={
           screenWidth >= 1024
             ? 0.75
@@ -82,7 +79,6 @@ const Computers = ({ screenWidth }) => {
             ? 0.22
             : 0.2
         }
-        /*Changing positioning of the computer model based on screen width*/
         position={
           screenWidth >= 1024
             ? [0, -2.5, -1.0]
@@ -110,18 +106,14 @@ const ComputersCanvas = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // function that sets the screen width to the screenWidth state
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
 
-    // Set initial screen width
     handleResize();
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Clean up by removing the listener to avoid memory leaks
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
