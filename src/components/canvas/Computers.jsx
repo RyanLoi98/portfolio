@@ -8,27 +8,46 @@ const Computers = ({ screenWidth }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   // state to ensure the rotation only happens once
-  const [firstRotation, setFirstRotation] = useState(true);
+  const [firstRotation, setFirstRotation] = useState(false);
 
   // Ref to the computer model
   const computerRef = useRef();
 
-   // Control rotation state
-   const rotationSpeed = 0.02; // adjust speed here
-   const targetRotation = Math.PI * 2;
-   let currentRotation = 0;
-  
+  // Control rotation state
+  const rotationSpeed = 0.02; // adjust speed here
+  const targetRotation = Math.PI * 2;
+  let currentRotation = 0;
+
+  // this effect ensures the model does not rotate on load, and there is a small delay
+  useEffect(() => {
+    if (computer && computer.scene && computerRef.current) {
+      // Delay 850ms before starting rotation
+      const timer = setTimeout(() => {
+        setFirstRotation(true);
+      }, 850);
+
+      // Cleanup timeout if component unmounts early
+      return () => clearTimeout(timer);
+    }
+  }, [computer]);
+
   // Function to Rotate the computer model once upon load
-   useFrame(() => {
-    if (firstRotation && computerRef.current && currentRotation < targetRotation) {
-      const deltaRotation = Math.min(rotationSpeed, targetRotation - currentRotation);
+  useFrame(() => {
+    if (
+      firstRotation &&
+      computerRef.current &&
+      currentRotation < targetRotation
+    ) {
+      const deltaRotation = Math.min(
+        rotationSpeed,
+        targetRotation - currentRotation
+      );
       computerRef.current.rotation.y += deltaRotation;
       currentRotation += deltaRotation;
-    }else{
+    } else {
       setFirstRotation(false);
     }
   });
-
 
   return (
     <mesh>
@@ -44,27 +63,43 @@ const Computers = ({ screenWidth }) => {
       />
       <primitive
         ref={computerRef}
-
         object={computer.scene}
-
         /* Changing scale based on screen width in px eg. >= 1024 px -> 0.75 scale,  >=768 px but <1025 px -> 0.65 scale, all else 0.45 scale*/
-        scale ={screenWidth >= 1024 ? 0.75 : 
-                screenWidth >= 768 ? 0.60 :
-                screenWidth >= 640 ? 0.50 :
-                screenWidth >= 550 ? 0.45 :
-                screenWidth >= 425 ? 0.35 :
-                screenWidth >= 350 ? 0.30 : 
-                screenWidth >= 300 ? 0.22 : 0.20}
-
-        /*Changing positioning of the computer model based on screen width*/        
-        position ={screenWidth >= 1024 ? [0, -2.5, -1.0] : 
-                screenWidth >= 768 ? [0, -2.0, -0.75] :
-                screenWidth >= 640 ? [0, -1.75, -0.70] :
-                screenWidth >= 550 ? [0, -1.50, -0.60] :
-                screenWidth >= 425 ? [0, -1.35, -0.45] : 
-                screenWidth >= 350 ? [0, -1.25, -0.35] : 
-                screenWidth >= 300 ? [0, -0.75, -0.35] : [0, -0.75, -0.30]}     
-
+        scale={
+          screenWidth >= 1024
+            ? 0.75
+            : screenWidth >= 768
+            ? 0.6
+            : screenWidth >= 640
+            ? 0.5
+            : screenWidth >= 550
+            ? 0.45
+            : screenWidth >= 425
+            ? 0.35
+            : screenWidth >= 350
+            ? 0.3
+            : screenWidth >= 300
+            ? 0.22
+            : 0.2
+        }
+        /*Changing positioning of the computer model based on screen width*/
+        position={
+          screenWidth >= 1024
+            ? [0, -2.5, -1.0]
+            : screenWidth >= 768
+            ? [0, -2.0, -0.75]
+            : screenWidth >= 640
+            ? [0, -1.75, -0.7]
+            : screenWidth >= 550
+            ? [0, -1.5, -0.6]
+            : screenWidth >= 425
+            ? [0, -1.35, -0.45]
+            : screenWidth >= 350
+            ? [0, -1.25, -0.35]
+            : screenWidth >= 300
+            ? [0, -0.75, -0.35]
+            : [0, -0.75, -0.3]
+        }
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
