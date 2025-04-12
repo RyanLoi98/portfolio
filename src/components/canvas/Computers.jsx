@@ -1,11 +1,34 @@
-import { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ screenWidth }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
+  // state to ensure the rotation only happens once
+  const [firstRotation, setFirstRotation] = useState(true);
+
+  // Ref to the computer model
+  const computerRef = useRef();
+
+   // Control rotation state
+   const rotationSpeed = 0.02; // adjust speed here
+   const targetRotation = Math.PI * 2;
+   let currentRotation = 0;
+  
+  // Function to Rotate the computer model once upon load
+   useFrame(() => {
+    if (firstRotation && computerRef.current && currentRotation < targetRotation) {
+      const deltaRotation = Math.min(rotationSpeed, targetRotation - currentRotation);
+      computerRef.current.rotation.y += deltaRotation;
+      currentRotation += deltaRotation;
+    }else{
+      setFirstRotation(false);
+    }
+  });
+
 
   return (
     <mesh>
@@ -20,6 +43,8 @@ const Computers = ({ screenWidth }) => {
         shadow-mapSize={1024}
       />
       <primitive
+        ref={computerRef}
+
         object={computer.scene}
 
         /* Changing scale based on screen width in px eg. >= 1024 px -> 0.75 scale,  >=768 px but <1025 px -> 0.65 scale, all else 0.45 scale*/
