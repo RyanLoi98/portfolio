@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ screenWidth }) => {
+const Computers = ({ screenWidth, onRotationComplete }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   // state to ensure the rotation only happens once
@@ -18,6 +18,7 @@ const Computers = ({ screenWidth }) => {
   const targetRotation = Math.PI * 2;
   const currentRotation = useRef(0);
 
+
   // this effect ensures the model does not rotate on load, and there is a small delay of 850ms
   useEffect(() => {
     if (computer && computer.scene && computerRef.current) {
@@ -28,6 +29,7 @@ const Computers = ({ screenWidth }) => {
       return () => clearTimeout(timer);
     }
   }, [computer]);
+
 
   // Function to Rotate the computer model once upon load
   useFrame(() => {
@@ -44,9 +46,13 @@ const Computers = ({ screenWidth }) => {
       currentRotation.current += deltaRotation;
     } else if (firstRotation) {
       setFirstRotation(false);
+      if (onRotationComplete) {
+        onRotationComplete();
+      }
     }
   });
 
+  
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
@@ -102,9 +108,13 @@ const Computers = ({ screenWidth }) => {
   );
 };
 
+
+
 const ComputersCanvas = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [showModal, setShowModal] = useState(false);
 
+  // Effect to update the screen width on resize, this is so the computer model can scale responsively
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -117,25 +127,77 @@ const ComputersCanvas = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return (
-    <Canvas
-      frameLoop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers screenWidth={screenWidth} />
-      </Suspense>
 
-      <Preload all />
-    </Canvas>
+
+  // function to display modal after rotation is complete
+  const handleRotationComplete = () => {
+    setShowModal(true);
+
+    const timer = setTimeout(() => {
+      setShowModal(false);
+    }, 10000); // hide the modal after 10 seconds
+
+    const hideModal = () => {
+      setShowModal(false);
+      clearTimeout(timer);
+      window.removeEventListener("mousedown", hideModal);
+      window.removeEventListener("scroll", hideModal);
+    };
+
+    window.addEventListener("mousedown", hideModal);
+    window.addEventListener("scroll", hideModal);
+  };
+
+
+
+  return (
+    <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+      <Canvas
+        style={{ width: "100%", height: "100%" }}
+        frameLoop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers
+            screenWidth={screenWidth}
+            onRotationComplete={handleRotationComplete}
+          />
+        </Suspense>
+
+        <Preload all />
+      </Canvas>
+
+      {showModal && (
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "rgba(0, 0, 0, 0.8)",
+            color: "white",
+            padding: "1rem 2rem",
+            borderRadius: "12px",
+            zIndex: 10,
+            fontSize: "1rem",
+            textAlign: "center",
+            pointerEvents: "none", 
+            transition: "opacity 0.5s ease", 
+          }}
+        >
+          All 3D models on this site can be rotated — drag them around
+          to try it out!
+        </div>
+      )}
+    </div>
   );
 };
 

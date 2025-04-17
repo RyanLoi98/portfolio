@@ -12,7 +12,8 @@
 
   --breakpoint-xs: 550px;
   --breakpoint-xxs: 425px;
-  
+  --breakpoint-xxxs: 300px;
+
   --shadow-card: 0px 35px 120px -15px rgb(33,30,53);
 
   --background-image-hero-pattern: url('/src/assets/herobg.png');
