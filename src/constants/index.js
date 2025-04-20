@@ -26,6 +26,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    uofclogo,
   } from "../assets";
   
   export const navLinks = [
@@ -43,6 +44,30 @@ import {
     },
   ];
   
+  const education = [
+    {
+      title: "Bachelor of Science in Computer Science",
+      institution: "University of Calgary",
+      icon: uofclogo,
+      date: "Sept 2021 - April 2025",
+      gpa: "3.9/4.0",
+      points: [
+        "Graduated with Distinction",
+
+        `Completed coursework in: Data structures and Algorithms, Design and Analysis of Algorithms, 
+        software engineering, Software architecture (testing, design, clean code, and development methodologies - 
+        Agile, Waterfall, and Spiral), web development, Database Management Systems, Computer networking, 
+        Human-Computer Interaction (focusing on design and usability of software), and Human-Robot Interaction`,
+
+        "Participated in Hackathons to enhance problem-solving skills.",
+      ]
+    },
+
+    {
+      
+    }
+  ]
+
   const services = [
     {
       title: "Web Developer",
@@ -265,4 +290,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { education, services, technologies, experiences, testimonials, projects };

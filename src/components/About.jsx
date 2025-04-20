@@ -9,6 +9,33 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 import { SectionWrapper } from "../hoc";
 
+const EducationCard = ({ index, title, icon }) => {
+  return (
+    <Tilt
+      className="xs:w-[250px] w-full"
+      tiltMaxAngleX={45}
+      tiltMaxAngleY={45}
+      scale={1}
+      transitionSpeed={450}
+    >
+      <motion.div
+        // fades in from the right, spring animation, 0.5 seconds delay staggered by the index
+        // of each rendered component, and 0.75 second duration
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
+
+
 const AwardCard = ({ index, title, icon }) => {
   return (
     <Tilt
@@ -65,23 +92,21 @@ const About = () => {
         an opportunity you'd like to discuss, I'd love to connect.
       </motion.p>
 
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className = "mt-10">
         <h2 className={styles.sectionHeadText}>Education.</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
+      <motion.div
+        className="mt-20 flex flex-wrap justify-center gap-10"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
       >
-        <span className="font-semibold">B.Sc. Computer Science</span> (GPA: 3.9
-        / 4.0) — University of Calgary, Canada (2021 - 2025)
-        <br />
-        <br />
-        <span className="font-semibold">
-          B.Sc. Cellular, Molecular, and Microbial Biology with Distinction
-        </span>{" "}
-        (GPA: 3.7 / 4.0) — University of Calgary, Canada (2017 - 2021)
-      </motion.p>
+        {services.map((service, index) => (
+          <AwardCard key={service.title} index={index} {...service} />
+        ))}
+      </motion.div>
+
 
       <motion.div
         className="mt-20 flex flex-wrap justify-center gap-10"
