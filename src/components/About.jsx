@@ -18,6 +18,7 @@ const EducationCard = ({
   gpa,
   points,
   coursework,
+  titleSize,
 }) => {
   return (
     <Tilt
@@ -29,26 +30,30 @@ const EducationCard = ({
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full h-[675px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div className="bg-tertiary rounded-[20px] py-5 px-5 min-h-[280px] flex justify-evenly items-center flex-col">
-          <img src={icon} alt="U of C" className="w-16 h-16 object-contain" />
-
-          {/* Centered only headings */}
-          <div className="text-center">
-            <h3 className="text-white text-[29px] font-bold">{institution}</h3>
-            <h3 className="text-white text-[23px] font-bold">{title}</h3>
-            <p className="text-white-100 text-[17px] font-semibold mt-2">
+        <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
+          {/* Top Section: Icon + Titles */}
+          <div className="flex flex-col items-center">
+            <img
+              src={icon}
+              alt="U of C"
+              className="w-16 h-16 object-contain mb-4"
+            />
+            <h3 className="text-white text-[29px] font-bold text-center">
+              {institution}
+            </h3>
+            <h4 className= {`text-white ${titleSize || "text-[23px]"} font-semibold text-center`}>
+              {title}
+            </h4>
+            <p className="text-white-100 text-[17px] font-medium">
               {date}
             </p>
-            <p className="text-white-100 text-[17px] font-semibold mt-2">
-              GPA: {gpa}
-            </p>
+            <p className="text-white-100 text-[17px] font-medium">GPA: {gpa}</p>
           </div>
 
-          {/* Lists section - left aligned */}
-          <div className="w-full mt-4 text-left">
-            {/* General points */}
+          {/* Middle Section: Points */}
+          <div className="mt-6 flex-grow">
             <ul className="list-disc ml-6 space-y-2">
               {points.map((point, index) => (
                 <li
@@ -59,13 +64,15 @@ const EducationCard = ({
                 </li>
               ))}
             </ul>
+          </div>
 
-            {/* Coursework */}
-            <ul className="list-disc ml-6 mt-4 space-y-2">
-              <li className="text-white-100 text-[16px]">
+          {/* Bottom Section: Coursework (only if present) */}
+          {coursework.length > 0 && (
+            <div className="mt-6">
+              <p className="text-white-100 text-[16px] font-semibold ml-6">
                 Relevant coursework:
-              </li>
-              <ul className="list-disc ml-6 space-y-1">
+              </p>
+              <ul className="list-disc ml-12 space-y-1 mt-2">
                 {coursework.map((course, index) => (
                   <li
                     key={`education-course-${index}`}
@@ -75,8 +82,8 @@ const EducationCard = ({
                   </li>
                 ))}
               </ul>
-            </ul>
-          </div>
+            </div>
+          )}
         </div>
       </motion.div>
     </Tilt>

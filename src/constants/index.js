@@ -66,6 +66,24 @@ import {
           "Human-Computer Interaction (UI/UX design and usability)",
           "Human-Robot Interaction",
         ],
+      titleSize: "",
+    },
+
+    {
+      title: "B.S.c Cellular Molecular Microbial Biology",
+      institution: "University of Calgary",
+      icon: uofclogo,
+      date: "Sept 2016 - Dec 2020",
+      gpa: "3.7/4.0",
+      points: [
+        "Graduated with Distinction",
+        "Worked in large research teams conducting experiments and analyzing microbial data",
+        "Contributed to scientific research projects, assisting with data collection and interpretation",
+        "Learned how to prepare and edit grant proposals for research funding",
+        "Developed skills in academic writing, including research papers and laboratory reports",
+      ],
+      coursework: [ ],
+      titleSize: "text-[19px]",
     },
 
   ]
