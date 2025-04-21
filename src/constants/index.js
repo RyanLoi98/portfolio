@@ -46,26 +46,28 @@ import {
   
   const education = [
     {
-      title: "Bachelor of Science in Computer Science",
+      title: "B.S.c Computer Science",
       institution: "University of Calgary",
       icon: uofclogo,
-      date: "Sept 2021 - April 2025",
+      date: "September 2021 - April 2025",
       gpa: "3.9/4.0",
       points: [
         "Graduated with Distinction",
-
-        `Completed coursework in: Data structures and Algorithms, Design and Analysis of Algorithms, 
-        software engineering, Software architecture (testing, design, clean code, and development methodologies - 
-        Agile, Waterfall, and Spiral), web development, Database Management Systems, Computer networking, 
-        Human-Computer Interaction (focusing on design and usability of software), and Human-Robot Interaction`,
-
-        "Participated in Hackathons to enhance problem-solving skills.",
-      ]
+        "Participated in Hackathons to enhance problem-solving skills",    
+      ],
+      coursework:
+        [
+          "Data Structures and Algorithms",
+          "Design and Analysis of Algorithms",
+          "Software Engineering and Software Architecture (testing, design, clean code, Agile, Waterfall, Spiral models)",
+          "Web Development",
+          "Database Management Systems",
+          "Computer Networking",
+          "Human-Computer Interaction (UI/UX design and usability)",
+          "Human-Robot Interaction",
+        ],
     },
 
-    {
-      
-    }
   ]
 
   const services = [
