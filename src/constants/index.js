@@ -2,10 +2,6 @@
 // as it will be done all in one spot.
 
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
     html,
@@ -88,23 +84,8 @@ import {
 
   ]
 
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+  const awards = [
+
   ];
   
   const technologies = [
@@ -310,4 +291,4 @@ import {
     },
   ];
   
-  export { education, services, technologies, experiences, testimonials, projects };
+  export { education, awards, technologies, experiences, testimonials, projects };
