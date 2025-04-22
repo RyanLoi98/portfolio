@@ -101,7 +101,7 @@ const AwardCard = ({ index, title, icon, date, points }) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full h-[335px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full h-[305px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
           {/* Top Section: Icon + Titles */}
