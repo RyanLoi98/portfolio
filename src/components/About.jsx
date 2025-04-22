@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { education, services } from "../constants";
+import { education, awards } from "../constants";
 
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -90,31 +90,56 @@ const EducationCard = ({
   );
 };
 
-const AwardCard = ({ index, title, icon }) => {
+const AwardCard = ({ index, title, icon, date, points }) => {
   return (
     <Tilt
-      className="xs:w-[250px] w-full"
+      className="xs:w-[275px] w-full"
       tiltMaxAngleX={45}
       tiltMaxAngleY={45}
       scale={1}
       transitionSpeed={450}
     >
       <motion.div
-        // fades in from the right, spring animation, 0.5 seconds delay staggered by the index
-        // of each rendered component, and 0.75 second duration
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full h-[335px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
+        <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
+          {/* Top Section: Icon + Titles */}
+          <div className="flex flex-col items-center">
+            <img
+              src={icon}
+              alt={title}
+              className="object-contain mb-4 max-h-[100px] max-w-[175px]"
+            />
+            <h3 className="text-white text-[20px] font-bold text-center mb-4">
+              {title}
+            </h3>
+            <p className="text-white-100 text-[18px] font-medium">
+              ({date})
+            </p>
+          </div>
+
+          {/* Middle Section: Points (only if present) */}
+          {points && points.length > 0 && (
+            <div className="mt-6 flex-grow">
+              <ul className="list-disc ml-6 space-y-2">
+                {points.map((point, index) => (
+                  <li
+                    key={`award-point-${index}`}
+                    className="text-white-100 text-[18px]"
+                  >
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </motion.div>
     </Tilt>
   );
 };
+
 
 const About = () => {
   return (
@@ -161,14 +186,18 @@ const About = () => {
         ))}
       </motion.div>
 
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={styles.sectionHeadText}>Awards.</h2>
+      </motion.div>
+
       <motion.div
         className="mt-20 flex flex-wrap justify-center gap-10"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        {services.map((service, index) => (
-          <AwardCard key={service.title} index={index} {...service} />
+        {awards.map((award, index) => (
+          <AwardCard key={award.title} index={index} {...award} />
         ))}
       </motion.div>
     </>

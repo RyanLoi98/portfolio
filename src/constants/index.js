@@ -23,6 +23,8 @@ import {
     tripguide,
     threejs,
     uofclogo,
+    AlbertaGovLogo,
+    educationmatterslogo,
   } from "../assets";
   
   export const navLinks = [
@@ -85,7 +87,44 @@ import {
   ]
 
   const awards = [
+    {
+      title: "Alberta New Beginnings Bursary",
+      icon: AlbertaGovLogo,
+      date: "2022",
+      points: [
+      ],
+    },
 
+    {
+      title: "Jason Lang scholarship",
+      icon: AlbertaGovLogo,
+      date: "2017, 2019",
+      points: [
+      ],
+    },
+
+    {
+      title: "Alexander Rutherford Scholarship",
+      icon: AlbertaGovLogo,
+      date: "2016",
+      points: [
+      ],
+    },
+
+    {
+      title: "Hal Winlaw Health and Nutrition Legacy Award",
+      icon: educationmatterslogo,
+      date: "2016",
+      points: ["Sole Recipient in Alberta"],
+    },
+
+    {
+      title: "Dean’s list",
+      icon: uofclogo,
+      date: "2018-2020",
+      points: [],
+    },
+    
   ];
   
   const technologies = [

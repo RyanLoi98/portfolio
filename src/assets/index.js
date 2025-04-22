@@ -4,7 +4,9 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import uofclogo from "./uofclogo.png";
-
+import mobile from "./mobile.png";
+import AlbertaGovLogo from "./AlbertaGovLogo.svg";
+import educationmatterslogo from "./educationmatters.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -56,4 +58,7 @@ export {
   jobit,
   tripguide,
   uofclogo,
+  mobile,
+  AlbertaGovLogo,
+  educationmatterslogo,
 };
