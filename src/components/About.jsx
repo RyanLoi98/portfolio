@@ -192,7 +192,7 @@ const About = () => {
       </motion.div>
 
       <motion.div
-        className="mt-20 flex flex-wrap justify-center gap-10"
+        className="mt-10 flex flex-wrap justify-center gap-10"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -207,7 +207,7 @@ const About = () => {
       </motion.div>
 
       <motion.div
-        className="mt-20 flex flex-wrap justify-center gap-10"
+        className="mt-10 flex flex-wrap justify-center gap-10"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
