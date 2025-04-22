@@ -65,6 +65,7 @@ import {
           "Human-Robot Interaction",
         ],
       titleSize: "",
+      link: "https://calendar.ucalgary.ca/programs/CPSCBSC",
     },
 
     {
@@ -82,6 +83,7 @@ import {
       ],
       coursework: [ ],
       titleSize: "text-[19px]",
+      link: "https://calendar.ucalgary.ca/programs/CMBIBSC",
     },
 
   ]
@@ -93,6 +95,7 @@ import {
       date: "2022",
       points: [
       ],
+      link: "https://studentaid.alberta.ca/scholarships/new-beginnings-bursary/",
     },
 
     {
@@ -101,6 +104,7 @@ import {
       date: "2017, 2019",
       points: [
       ],
+      link: "https://studentaid.alberta.ca/scholarships/jason-lang-scholarship/",
     },
 
     {
@@ -109,6 +113,7 @@ import {
       date: "2016",
       points: [
       ],
+      link: "https://studentaid.alberta.ca/scholarships-and-awards/alexander-rutherford-scholarship/",
     },
 
     {
@@ -116,6 +121,7 @@ import {
       icon: educationmatterslogo,
       date: "2016",
       points: ["Sole Recipient in Alberta"],
+      link: "https://www.educationmatters.ca/awards/hal-winlaw-health-nutrition-legacy-award/",
     },
 
     {
@@ -123,6 +129,7 @@ import {
       icon: uofclogo,
       date: "2018-2020",
       points: [],
+      link: "https://science.ucalgary.ca/about/excellence-and-awards/deans-list",
     },
     
   ];

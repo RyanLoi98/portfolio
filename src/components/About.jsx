@@ -19,6 +19,7 @@ const EducationCard = ({
   points,
   coursework,
   titleSize,
+  link,
 }) => {
   return (
     <Tilt
@@ -32,65 +33,76 @@ const EducationCard = ({
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full h-[675px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
-          {/* Top Section: Icon + Titles */}
-          <div className="flex flex-col items-center">
-            <img
-              src={icon}
-              alt="U of C"
-              className="w-16 h-16 object-contain mb-4"
-            />
-            <h3 className="text-white text-[29px] font-bold text-center">
-              {institution}
-            </h3>
-            <h4 className= {`text-white ${titleSize || "text-[23px]"} font-semibold text-center`}>
-              {title}
-            </h4>
-            <p className="text-white-100 text-[17px] font-medium">
-              {date}
-            </p>
-            <p className="text-white-100 text-[17px] font-medium">GPA: {gpa}</p>
-          </div>
-
-          {/* Middle Section: Points */}
-          <div className="mt-6 flex-grow">
-            <ul className="list-disc ml-6 space-y-2">
-              {points.map((point, index) => (
-                <li
-                  key={`education-point-${index}`}
-                  className="text-white-100 text-[16px]"
-                >
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Bottom Section: Coursework (only if present) */}
-          {coursework.length > 0 && (
-            <div className="mt-6">
-              <p className="text-white-100 text-[16px] font-semibold ml-6">
-                Relevant coursework:
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block h-full"
+        >
+          <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
+            {/* Top Section: Icon + Titles */}
+            <div className="flex flex-col items-center">
+              <img
+                src={icon}
+                alt="U of C"
+                className="w-16 h-16 object-contain mb-4"
+              />
+              <h3 className="text-white text-[29px] font-bold text-center">
+                {institution}
+              </h3>
+              <h4
+                className={`text-white ${
+                  titleSize || "text-[23px]"
+                } font-semibold text-center`}
+              >
+                {title}
+              </h4>
+              <p className="text-white-100 text-[17px] font-medium">{date}</p>
+              <p className="text-white-100 text-[17px] font-medium">
+                GPA: {gpa}
               </p>
-              <ul className="list-disc ml-12 space-y-1 mt-2">
-                {coursework.map((course, index) => (
+            </div>
+
+            {/* Middle Section: Points */}
+            <div className="mt-6 flex-grow">
+              <ul className="list-disc ml-6 space-y-2">
+                {points.map((point, index) => (
                   <li
-                    key={`education-course-${index}`}
-                    className="text-white-100 text-[14px]"
+                    key={`education-point-${index}`}
+                    className="text-white-100 text-[16px]"
                   >
-                    {course}
+                    {point}
                   </li>
                 ))}
               </ul>
             </div>
-          )}
-        </div>
+
+            {/* Bottom Section: Coursework (only if present) */}
+            {coursework.length > 0 && (
+              <div className="mt-6">
+                <p className="text-white-100 text-[16px] font-semibold ml-6">
+                  Relevant coursework:
+                </p>
+                <ul className="list-disc ml-12 space-y-1 mt-2">
+                  {coursework.map((course, index) => (
+                    <li
+                      key={`education-course-${index}`}
+                      className="text-white-100 text-[14px]"
+                    >
+                      {course}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </a>
       </motion.div>
     </Tilt>
   );
 };
 
-const AwardCard = ({ index, title, icon, date, points }) => {
+const AwardCard = ({ index, title, icon, date, points, link }) => {
   return (
     <Tilt
       className="xs:w-[275px] w-full"
@@ -103,43 +115,47 @@ const AwardCard = ({ index, title, icon, date, points }) => {
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full h-[305px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
-          {/* Top Section: Icon + Titles */}
-          <div className="flex flex-col items-center">
-            <img
-              src={icon}
-              alt={title}
-              className="object-contain mb-4 max-h-[100px] max-w-[175px]"
-            />
-            <h3 className="text-white text-[20px] font-bold text-center mb-4">
-              {title}
-            </h3>
-            <p className="text-white-100 text-[18px] font-medium">
-              ({date})
-            </p>
-          </div>
-
-          {/* Middle Section: Points (only if present) */}
-          {points && points.length > 0 && (
-            <div className="mt-6 flex-grow">
-              <ul className="list-disc ml-6 space-y-2">
-                {points.map((point, index) => (
-                  <li
-                    key={`award-point-${index}`}
-                    className="text-white-100 text-[18px]"
-                  >
-                    {point}
-                  </li>
-                ))}
-              </ul>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block h-full"
+        >
+          <div className="bg-tertiary rounded-[20px] py-5 px-5 h-full flex flex-col justify-start">
+            {/* Top Section: Icon + Titles */}
+            <div className="flex flex-col items-center">
+              <img
+                src={icon}
+                alt={title}
+                className="object-contain mb-4 max-h-[100px] max-w-[175px]"
+              />
+              <h3 className="text-white text-[20px] font-bold text-center mb-4">
+                {title}
+              </h3>
+              <p className="text-white-100 text-[18px] font-medium">({date})</p>
             </div>
-          )}
-        </div>
+
+            {/* Middle Section: Points (only if present) */}
+            {points && points.length > 0 && (
+              <div className="mt-6 flex-grow">
+                <ul className="list-disc ml-6 space-y-2">
+                  {points.map((point, index) => (
+                    <li
+                      key={`award-point-${index}`}
+                      className="text-white-100 text-[18px]"
+                    >
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </a>
       </motion.div>
     </Tilt>
   );
 };
-
 
 const About = () => {
   return (
