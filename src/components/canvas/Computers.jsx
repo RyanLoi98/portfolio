@@ -69,15 +69,17 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
         ref={computerRef}
         object={computer.scene}
         scale={
-          screenWidth >= 1024
+          screenWidth >= 1025
             ? 0.75
+            :screenWidth >= 1024
+            ? 0.65
             : screenWidth >= 768
             ? 0.6
             : screenWidth >= 640
             ? 0.5
             : screenWidth >= 550
             ? 0.45
-            : screenWidth >= 425
+            : screenWidth >= 490
             ? 0.35
             : screenWidth >= 350
             ? 0.3
@@ -86,7 +88,9 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
             : 0.2
         }
         position={
-          screenWidth >= 1024
+          screenWidth >= 1025
+            ? [0, -2.5, -1.0]
+            : screenWidth >= 1024
             ? [0, -2.5, -1.0]
             : screenWidth >= 768
             ? [0, -2.0, -0.75]
@@ -94,12 +98,12 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
             ? [0, -1.75, -0.7]
             : screenWidth >= 550
             ? [0, -1.5, -0.6]
-            : screenWidth >= 425
-            ? [0, -1.35, -0.45]
+            : screenWidth >= 490
+            ? [0, -1.45, -0.45]
             : screenWidth >= 350
-            ? [0, -1.25, -0.35]
+            ? [0, -1.85, -0.35]
             : screenWidth >= 300
-            ? [0, -0.75, -0.35]
+            ? [0, -1.75, -0.35]
             : [0, -0.75, -0.3]
         }
         rotation={[-0.01, -0.2, -0.1]}
