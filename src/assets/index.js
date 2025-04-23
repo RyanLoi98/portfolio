@@ -5,7 +5,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import uofclogo from "./uofclogo.png";
 import mobile from "./mobile.png";
-import AlbertaGovLogo from "./AlbertaGovLogo.svg";
+import AlbertaGovLogo from "./AlbertaGovLogo.png";
 import educationmatterslogo from "./educationmatters.png";
 
 import css from "./tech/css.png";
