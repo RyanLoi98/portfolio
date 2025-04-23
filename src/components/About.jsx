@@ -174,7 +174,7 @@ const About = () => {
         {/*Overview Text */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary xxs:text-[20px] text-[16px] max-w-3xl leading-[30px]"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
