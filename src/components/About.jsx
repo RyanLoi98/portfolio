@@ -160,14 +160,24 @@ const AwardCard = ({ index, title, icon, date, points, link }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+     {/*About and Overview Titles*/}
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <p className={styles.sectionSubText}>About</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
+        {/*Overview Text */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
       >
         I'm a Computer Science graduate from the University of Calgary with a
         strong passion for coding, problem-solving, and building software
@@ -187,10 +197,18 @@ const About = () => {
         an opportunity you'd like to discuss, I'd love to connect.
       </motion.p>
 
-      <motion.div variants={textVariant()} className="mt-10">
+      {/*Education Title */}
+      <motion.div
+        variants={textVariant()}
+        className="mt-10"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <h2 className={styles.sectionHeadText}>Education.</h2>
       </motion.div>
 
+      {/*Education Cards */}
       <motion.div
         className="mt-10 flex flex-wrap justify-center gap-10"
         initial="hidden"
@@ -202,10 +220,18 @@ const About = () => {
         ))}
       </motion.div>
 
-      <motion.div variants={textVariant()} className="mt-10">
+      {/*Awards Title */}
+      <motion.div
+        variants={textVariant()}
+        className="mt-10"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
         <h2 className={styles.sectionHeadText}>Awards.</h2>
       </motion.div>
-
+      
+      {/*Awards Cards */}
       <motion.div
         className="mt-10 flex flex-wrap justify-center gap-10"
         initial="hidden"
