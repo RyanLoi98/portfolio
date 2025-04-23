@@ -31,7 +31,7 @@ const EducationCard = ({
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full xxs:h-[685px] h-[595px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full xxs:h-[685px] h-[580px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <a
           href={link}
@@ -45,31 +45,31 @@ const EducationCard = ({
               <img
                 src={icon}
                 alt="U of C"
-                className="xxs:w-20 w-16  xxs:h-20 h-16 object-contain xxs:mb-4 mb-2"
+                className="xxs:w-20 w-15  xxs:h-20 h-15 object-contain xxs:mb-4 mb-2"
               />
-              <h3 className="text-white xxs:text-[29px] text-[24px] font-bold text-center">
+              <h3 className="text-white xxs:text-[29px] text-[22.5px] font-bold text-center">
                 {institution}
               </h3>
               <h4
                 className={`text-white ${
-                  titleSize || "xxs:text-[23px] text-[20px]"
+                  titleSize || "xxs:text-[23px] text-[19px]"
                 } font-semibold text-center`}
               >
                 {title}
               </h4>
-              <p className="text-white-100 xxs:text-[17px] text-[15px] font-medium">{date}</p>
-              <p className="text-white-100 xxs:text-[17px] text-[15px] font-medium">
+              <p className="text-white-100 xxs:text-[17px] text-[14px] font-medium">{date}</p>
+              <p className="text-white-100 xxs:text-[17px] text-[14px] font-medium">
                 GPA: {gpa}
               </p>
             </div>
 
             {/* Middle Section: Points */}
-            <div className="xxs:mt-6 mt-4 flex-grow">
+            <div className="xxs:mt-6 mt-3 flex">
               <ul className="list-disc ml-6 space-y-2">
                 {points.map((point, index) => (
                   <li
                     key={`education-point-${index}`}
-                    className="text-white-100 xxs:text-[16px] text-[14px]"
+                    className="text-white-100 xxs:text-[16px] text-[13px]"
                   >
                     {point}
                   </li>
@@ -79,15 +79,15 @@ const EducationCard = ({
 
             {/* Bottom Section: Coursework (only if present) */}
             {coursework.length > 0 && (
-              <div className="xxs:mt-6 mt-4 ">
-                <p className="text-white-100 xxs:text-[16px] text-[14px] font-semibold ml-6">
+              <div className="xxs:mt-6 mt-4">
+                <p className="text-white-100 xxs:text-[16px] text-[13px] font-semibold ml-6">
                   Relevant coursework:
                 </p>
                 <ul className="list-disc ml-12 space-y-1 mt-2">
                   {coursework.map((course, index) => (
                     <li
                       key={`education-course-${index}`}
-                      className="text-white-100 xxs:text-[14px] text-[13px]"
+                      className="text-white-100 xxs:text-[14px] text-[12px]"
                     >
                       {course}
                     </li>
