@@ -2,6 +2,8 @@ import { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
+import { styles } from "../../styles";
+
 import CanvasLoader from "../Loader";
 
 const Computers = ({ screenWidth, onRotationComplete }) => {
@@ -18,7 +20,6 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
   const targetRotation = Math.PI * 2;
   const currentRotation = useRef(0);
 
-
   // this effect ensures the model does not rotate on load, and there is a small delay of 850ms
   useEffect(() => {
     if (computer && computer.scene && computerRef.current) {
@@ -29,7 +30,6 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
       return () => clearTimeout(timer);
     }
   }, [computer]);
-
 
   // Function to Rotate the computer model once upon load
   useFrame(() => {
@@ -52,13 +52,12 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
     }
   });
 
-  
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
-      <pointLight intensity={4} />
+      <pointLight position={[-0.5, 2.5, 0.25]} intensity={4} />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[-30, 50, 10]}
         angle={0.12}
         intensity={10000}
         penumbra={1}
@@ -69,50 +68,44 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
         ref={computerRef}
         object={computer.scene}
         scale={
-          screenWidth >= 1025
-            ? 0.75
-            :screenWidth >= 1024
-            ? 0.65
-            : screenWidth >= 768
-            ? 0.6
+          screenWidth >= 950
+            ? 1.0
+            : screenWidth >= 790
+            ? 0.90
+            : screenWidth >= 701
+            ? 0.80
             : screenWidth >= 640
-            ? 0.5
-            : screenWidth >= 550
-            ? 0.45
-            : screenWidth >= 490
-            ? 0.35
-            : screenWidth >= 350
-            ? 0.3
-            : screenWidth >= 300
-            ? 0.22
-            : 0.2
+            ? 0.70
+            : screenWidth >= 500
+            ? 0.60
+            : screenWidth >= 400
+            ? 0.50
+            : screenWidth >= 320
+            ? 0.40
+            : 0.3
         }
         position={
-          screenWidth >= 1025
-            ? [0, -2.5, -1.0]
-            : screenWidth >= 1024
-            ? [0, -2.5, -1.0]
-            : screenWidth >= 768
-            ? [0, -2.0, -0.75]
+          screenWidth >= 950
+            ? [0, -1.7, -1.6]
+            : screenWidth >= 790
+            ? [0, -1.0, -1.4]
+            : screenWidth >= 701
+            ? [0, -0.6, -1.3]
             : screenWidth >= 640
-            ? [0, -1.75, -0.7]
-            : screenWidth >= 550
-            ? [0, -1.5, -0.6]
-            : screenWidth >= 490
-            ? [0, -1.45, -0.45]
-            : screenWidth >= 350
-            ? [0, -1.85, -0.35]
-            : screenWidth >= 300
-            ? [0, -1.75, -0.35]
-            : [0, -0.75, -0.3]
+            ? [0, 0.0, -1.3]
+            : screenWidth >= 500
+            ? [0, 0.0, -1.0]
+            : screenWidth >= 400
+            ? [0, 0.65, -0.7]
+            : screenWidth >= 320
+            ? [0, 0.95, -0.55]
+            : [0, 1.5, -0.55]
         }
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
 };
-
-
 
 const ComputersCanvas = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -130,8 +123,6 @@ const ComputersCanvas = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-
 
   // function to display modal after rotation is complete
   const handleRotationComplete = () => {
@@ -152,12 +143,14 @@ const ComputersCanvas = () => {
     window.addEventListener("scroll", hideModal);
   };
 
-
-
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+    <div
+      className={`${styles.paddingX} 
+        flex flex-col flex-grow xl:h-[600px] lg:h-[500px] md:h-[400px] xs:h-[300px]
+        w-full mx-auto justify-center items-center max-w-7xl`}
+    >
       <Canvas
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "150%", height: "100%" }}
         frameLoop="demand"
         shadows
         dpr={[1, 2]}
@@ -183,7 +176,7 @@ const ComputersCanvas = () => {
         <div
           style={{
             position: "absolute",
-            top: "50%",
+            top: "55%",
             left: "50%",
             transform: "translateX(-50%)",
             background: "rgba(0, 0, 0, 0.8)",
@@ -193,12 +186,12 @@ const ComputersCanvas = () => {
             zIndex: 10,
             fontSize: "1rem",
             textAlign: "center",
-            pointerEvents: "none", 
-            transition: "opacity 0.5s ease", 
+            pointerEvents: "none",
+            transition: "opacity 0.5s ease",
           }}
         >
-          All 3D models on this site can be rotated — drag them around
-          to try it out!
+          All 3D models on this site can be rotated — drag them around to try it
+          out!
         </div>
       )}
     </div>
