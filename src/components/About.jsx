@@ -79,7 +79,7 @@ const EducationCard = ({
 
             {/* Bottom Section: Coursework (only if present) */}
             {coursework.length > 0 && (
-              <div className="xxs:mt-6 mt-4">
+              <div className="mt-4">
                 <p className="text-white-100 xxs:text-[16px] text-[13px] font-semibold ml-6">
                   Relevant coursework:
                 </p>
@@ -87,7 +87,7 @@ const EducationCard = ({
                   {coursework.map((course, index) => (
                     <li
                       key={`education-course-${index}`}
-                      className="text-white-100 xxs:text-[14px] text-[12px]"
+                      className="text-white-100 xxs:text-[15px] text-[12px]"
                     >
                       {course}
                     </li>
