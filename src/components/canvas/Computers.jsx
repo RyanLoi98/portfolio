@@ -177,7 +177,7 @@ const ComputersCanvas = () => {
           style={{
             position: "absolute",
             top: "55%",
-            left: "50%",
+            left: "45%",
             transform: "translateX(-50%)",
             background: "rgba(0, 0, 0, 0.8)",
             color: "white",
