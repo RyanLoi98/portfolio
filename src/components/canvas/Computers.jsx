@@ -68,16 +68,16 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
         ref={computerRef}
         object={computer.scene}
         scale={
-          screenWidth >= 950
+          screenWidth >= 1100
             ? 1.0
-            : screenWidth >= 790
-            ? 0.90
+            : screenWidth >= 850
+            ? 0.85
             : screenWidth >= 701
             ? 0.80
             : screenWidth >= 640
             ? 0.70
             : screenWidth >= 500
-            ? 0.60
+            ? 0.55
             : screenWidth >= 400
             ? 0.50
             : screenWidth >= 320
@@ -85,16 +85,16 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
             : 0.3
         }
         position={
-          screenWidth >= 950
+          screenWidth >= 1100
             ? [0, -1.7, -1.6]
-            : screenWidth >= 790
-            ? [0, -1.0, -1.4]
+            :screenWidth >= 850
+            ? [0, -1.7, -1.6]
             : screenWidth >= 701
-            ? [0, -0.6, -1.3]
+            ? [0, -0.6, -0.9]
             : screenWidth >= 640
-            ? [0, 0.0, -1.3]
+            ? [0, 0.0, -0.9]
             : screenWidth >= 500
-            ? [0, 0.0, -1.0]
+            ? [0, 0.0, -0.8]
             : screenWidth >= 400
             ? [0, 0.65, -0.7]
             : screenWidth >= 320
@@ -146,7 +146,7 @@ const ComputersCanvas = () => {
   return (
     <div
       className={`${styles.paddingX} 
-        flex flex-col flex-grow xl:h-[600px] lg:h-[500px] md:h-[400px] xs:h-[300px]
+        flex flex-col flex-grow xl:h-[600px] lg:h-[500px] md:h-[400px] h-[300px]
         w-full mx-auto justify-center items-center max-w-7xl`}
     >
       <Canvas
