@@ -1,15 +1,18 @@
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
 import { motion } from "framer-motion";
 
-import "react-vertical-timeline-component/style.min.css";
+import Tilt from "react-parallax-tilt";
 
 import { styles } from "../styles";
 import { experiences, volunteering } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { textVariant,  fadeIn } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -50,10 +53,10 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 );
 
-const VolunteeringCard = ({ index, title, icon, date, points, link }) => {
+const VolunteeringCard = ({ index, Organization, icon, Position, points, link }) => {
   return (
     <Tilt
-      className="w-[275px]"
+      className="w-[475px]"
       tiltMaxAngleX={45}
       tiltMaxAngleY={45}
       scale={1}
@@ -61,7 +64,7 @@ const VolunteeringCard = ({ index, title, icon, date, points, link }) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full h-[305px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full h-[555px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <a
           href={link}
@@ -74,13 +77,13 @@ const VolunteeringCard = ({ index, title, icon, date, points, link }) => {
             <div className="flex flex-col items-center">
               <img
                 src={icon}
-                alt={title}
+                alt={Organization}
                 className="object-contain mb-4 max-h-[100px] max-w-[175px]"
               />
-              <h3 className="text-white text-[20px] font-bold text-center mb-4">
-                {title}
+              <h3 className="text-white text-[30px] font-bold text-center mb-4">
+                {Organization}
               </h3>
-              <p className="text-white-100 text-[18px] font-medium">({date})</p>
+              <p className="text-white-100 text-[21px] text-center font-medium">{Position}</p>
             </div>
 
             {/* Middle Section: Points (only if present) */}
@@ -89,7 +92,7 @@ const VolunteeringCard = ({ index, title, icon, date, points, link }) => {
                 <ul className="list-disc ml-6 space-y-2">
                   {points.map((point, index) => (
                     <li
-                      key={`award-point-${index}`}
+                      key={`volunteering-point-${index}`}
                       className="text-white-100 text-[18px]"
                     >
                       {point}

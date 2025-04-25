@@ -4,11 +4,14 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import uofclogo from "./uofclogo.png";
+import EPScarlettLogo from "./EpScarlett.png";
 import mobile from "./mobile.png";
 import AlbertaGovLogo from "./AlbertaGovLogo.png";
 import educationmatterslogo from "./educationmatters.png";
 
 import AdvanceHairSalonLogo from "./company/Advance_Hair_Salon.png";
+
+import MustardSeedLogo from "./mustardseed.png";  
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -55,4 +58,6 @@ export {
   AlbertaGovLogo,
   educationmatterslogo,
   AdvanceHairSalonLogo,
+  MustardSeedLogo,
+  EPScarlettLogo
 };
