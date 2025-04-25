@@ -64,7 +64,7 @@ const VolunteeringCard = ({ index, Organization, icon, Position, points, link })
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full h-[555px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full h-[580px] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <a
           href={link}
@@ -78,22 +78,22 @@ const VolunteeringCard = ({ index, Organization, icon, Position, points, link })
               <img
                 src={icon}
                 alt={Organization}
-                className="object-contain mb-4 max-h-[100px] max-w-[175px]"
+                className="object-contain xs:mb-4 mb-3 max-h-[100px] max-w-[175px]"
               />
-              <h3 className="text-white text-[30px] font-bold text-center mb-4">
+              <h3 className="text-white xs:text-[30px] xxs:text-[25px] text-[20px] font-bold text-center xs:mb-4 mb-2">
                 {Organization}
               </h3>
-              <p className="text-white-100 text-[21px] text-center font-medium">{Position}</p>
+              <p className="text-white-100 xs:text-[21px] xxs:text-[19px] text-[17px] text-center font-medium">{Position}</p>
             </div>
 
             {/* Middle Section: Points (only if present) */}
             {points && points.length > 0 && (
-              <div className="mt-6 flex-grow">
+              <div className="xs:mt-6 mt-4 flex-grow">
                 <ul className="list-disc ml-6 space-y-2">
                   {points.map((point, index) => (
                     <li
                       key={`volunteering-point-${index}`}
-                      className="text-white-100 text-[18px]"
+                      className="text-white-100 xs:text-[18px] xxs:text-[15px] text-[14px]"
                     >
                       {point}
                     </li>
