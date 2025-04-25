@@ -14,10 +14,6 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
@@ -25,6 +21,7 @@ import {
     uofclogo,
     AlbertaGovLogo,
     educationmatterslogo,
+    AdvanceHairSalonLogo,
   } from "../assets";
   
   export const navLinks = [
@@ -191,55 +188,19 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Customer Experience & Administrative Lead",
+      company_name: "Advance Hair Salon (Calgary, Canada)",
+      icon: AdvanceHairSalonLogo,
+      iconBg: "#525c82",
+      date: "July 2013 - May 2024",
+      duration: "10 years, 10 months",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Provided exceptional front-desk service by answering client inquiries, managing high-volume appointment scheduling, and ensuring a welcoming atmosphere for all guests.",
+        "Maintained a spotless salon environment by overseeing cleanliness standards, laundering towels, and organizing workstations to meet health and safety protocols.",
+        "Managed supply chain logistics, including ordering salon products, restocking inventory, and negotiating with vendors to reduce costs.",
+        "Oversaw daily financial operations, including cash handling, sales reconciliation, and basic bookkeeping to support accurate financial reporting.",
+        "Assisted in onboarding and training new team members, delivering guidance on company procedures, customer service standards, and point-of-sale systems.",
+        "Spearheaded weekly staff meetings to align team objectives, set performance goals, and foster a positive, collaborative work culture.",  
       ],
     },
   ];
