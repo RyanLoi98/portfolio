@@ -205,6 +205,11 @@ import {
     },
   ];
   
+  const volunteering = [
+
+
+  ]
+
   const testimonials = [
     {
       testimonial:
@@ -298,4 +303,4 @@ import {
     },
   ];
   
-  export { education, awards, technologies, experiences, testimonials, projects };
+  export { education, awards, experiences, volunteering, technologies, testimonials, projects };
