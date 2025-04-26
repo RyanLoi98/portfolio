@@ -149,7 +149,7 @@ const Experience = () => {
       >
         {volunteering.map((volunteer, index) => (
           <VolunteeringCard
-            key={volunteer.title}
+            key={`${volunteer.Organization}-${index}`}
             index={index}
             {...volunteer}
           />
