@@ -20,6 +20,26 @@ import {
   AdvanceHairSalonLogo,
   MustardSeedLogo,
   EPScarlettLogo,
+  github,
+  python,
+  java,
+  c,
+  swift,
+  arm64,
+  threejs,
+  firebase,
+  mysql,
+  npm,
+  postman,
+  gitlab,
+  filezilla,
+  vsc,
+  intellij,
+  pycharm,
+  clion,
+  webstorm,
+  datagrip,
+
 } from "../assets";
 
 export const navLinks = [
@@ -275,9 +295,9 @@ const technologies = {
       link: "https://www.mongodb.com/",
     },
     {
-      name: "SQL",
-      icon: sql,
-      link: "https://en.wikipedia.org/wiki/SQL",
+      name: "mySQL",
+      icon: mysql,
+      link: "https://www.mysql.com/",
     },
   ],
 
@@ -340,6 +360,16 @@ const technologies = {
     {
       name: "DataGrip",
       icon: datagrip,
+      link: "https://www.jetbrains.com/",
+    },
+    {
+      name: "MySqlWorkbench",
+      icon: mysqlworkbench,
+      link: "https://www.jetbrains.com/",
+    },
+    {
+      name: "MonogDBCompass",
+      icon: mongodbcompass,
       link: "https://www.jetbrains.com/",
     },
   ],
