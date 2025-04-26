@@ -9,13 +9,11 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
   figma,
   docker,
   carrent,
   jobit,
   tripguide,
-  threejs,
   uofclogo,
   AlbertaGovLogo,
   educationmatterslogo,
@@ -190,53 +188,195 @@ const volunteering = [
 
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-    link: "https://html.spec.whatwg.org/multipage/",
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+const technologies = {
+  languages: [
+    {
+      name: "JavaScript",
+      icon: javascript,
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: "Python 3",
+      icon: python,
+      link: "https://www.python.org/",
+    },
+    {
+      name: "Java",
+      icon: java,
+      link: "https://www.oracle.com/java/",
+    },
+    {
+      name: "C",
+      icon: c,
+      link: "https://en.wikipedia.org/wiki/C_(programming_language)",
+    },
+    {
+      name: "Swift",
+      icon: swift,
+      link: "https://developer.apple.com/swift/",
+    },
+    {
+      name: "ARM64 Assembly",
+      icon: arm64,
+      link: "https://developer.arm.com/architectures/instruction-sets/a-profile-architecture",
+    },
+  ],
+
+  frontend: [
+    {
+      name: "HTML5",
+      icon: html,
+      link: "https://html.spec.whatwg.org/multipage/",
+    },
+    {
+      name: "CSS3",
+      icon: css,
+      link: "https://www.w3.org/Style/CSS/",
+    },
+    {
+      name: "React.js",
+      icon: reactjs,
+      link: "https://react.dev/",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+      link: "https://tailwindcss.com/",
+    },
+    {
+      name: "Three.js",
+      icon: threejs,
+      link: "https://threejs.org/",
+    },
+    {
+      name: "Figma",
+      icon: figma,
+      link: "https://www.figma.com/",
+    },
+  ],
+
+  backend: [
+    {
+      name: "Node.js",
+      icon: nodejs,
+      link: "https://nodejs.org/",
+    },
+    {
+      name: "Firebase",
+      icon: firebase,
+      link: "https://firebase.google.com/",
+    },
+  ],
+
+  databases: [
+    {
+      name: "MongoDB",
+      icon: mongodb,
+      link: "https://www.mongodb.com/",
+    },
+    {
+      name: "SQL",
+      icon: sql,
+      link: "https://en.wikipedia.org/wiki/SQL",
+    },
+  ],
+
+  devtools: [
+    {
+      name: "Docker",
+      icon: docker,
+      link: "https://www.docker.com/",
+    },
+    {
+      name: "NPM",
+      icon: npm,
+      link: "https://www.npmjs.com/",
+    },
+    {
+      name: "Postman",
+      icon: postman,
+      link: "https://www.postman.com/",
+    },
+    {
+      name: "GitHub",
+      icon: github,
+      link: "https://github.com/",
+    },
+    {
+      name: "GitLab",
+      icon: gitlab,
+      link: "https://about.gitlab.com/",
+    },
+    {
+      name: "FileZilla",
+      icon: filezilla,
+      link: "https://filezilla-project.org/",
+    },
+    {
+      name: "Visual Studio Code",
+      icon: vsc,
+      link: "https://code.visualstudio.com/",
+    },
+    {
+      name: "IntelliJ",
+      icon: intellij,
+      link: "https://www.jetbrains.com/",
+    },
+    {
+      name: "PyCharm",
+      icon: pycharm,
+      link: "https://www.jetbrains.com/",
+    },
+    {
+      name: "CLion",
+      icon: clion,
+      link: "https://www.jetbrains.com/",
+    },
+    {
+      name: "WebStorm",
+      icon: webstorm,
+      link: "https://www.jetbrains.com/",
+    },
+    {
+      name: "DataGrip",
+      icon: datagrip,
+      link: "https://www.jetbrains.com/",
+    },
+  ],
+
+
+  cloud: [
+    {
+      name: "Vercel",
+      icon: vercel,
+      link: "https://vercel.com/",
+    },
+    {
+      name: "Cloudinary",
+      icon: cloudinary,
+      link: "https://cloudinary.com/",
+    },
+  ],
+
+  operatingSystems: [
+    {
+      name: "Windows",
+      icon: windows,
+      link: "https://www.microsoft.com/en-us/windows",
+    },
+    {
+      name: "Ubuntu",
+      icon: ubuntu,
+      link: "https://ubuntu.com/",
+    },
+    {
+      name: "macOS",
+      icon: macos,
+      link: "https://www.apple.com/macos/",
+    },
+  ],
+};
+
 
 const testimonials = [
   {

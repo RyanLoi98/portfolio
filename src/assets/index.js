@@ -13,18 +13,18 @@ import AdvanceHairSalonLogo from "./company/Advance_Hair_Salon.png";
 
 import MustardSeedLogo from "./mustardseed.png";  
 
+// Technical Skills
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
 
+// Projects
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -38,14 +38,12 @@ export {
   css,
   docker,
   figma,
-  git,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
   tailwind,
-  threejs,
   carrent,
   jobit,
   tripguide,
