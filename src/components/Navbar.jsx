@@ -17,9 +17,9 @@ const Navbar = () => {
                     onClick = {() => {setActive(""); window.scrollTo(0, 0);}} 
                 >
                     <img src={logo} alt="profile logo" className = "w-12 h-12 object-contain"></img>
-                    <p className="text-white text-[18px] font-bolt cursor-pointer flex">Ryan Loi&nbsp;<span className = "sm:block hidden">| Software Developer</span></p>
+                    <p className="text-white text-[18px] font-bolt cursor-pointer flex">Ryan Loi&nbsp;<span className = "lg:block hidden">| Software Developer</span></p>
                 </Link>
-                <ul className='list-none hidden sm:flex flex-row gap-10'>
+                <ul className='list-none hidden md:flex flex-row gap-10'>
                     {navLinks.map((link) => (
                       <li 
                         key={link.id} 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
                 {/* this is for the mobile navigation bar */}
-                <div className = "sm:hidden flex flex-1 justify-end items-center">
+                <div className = "md:hidden flex flex-1 justify-end items-center">
                     <img src={isMobile ? close : menu} alt = "menu" className = "w-[28px] h-[28px] object-contain cursor-pointer" 
                     onClick={() => setIsMobile(!isMobile)}
                     />
