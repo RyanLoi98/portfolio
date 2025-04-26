@@ -3,11 +3,9 @@
 
 import {
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -196,6 +194,7 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    link: "https://html.spec.whatwg.org/multipage/",
   },
   {
     name: "CSS 3",
@@ -206,16 +205,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
