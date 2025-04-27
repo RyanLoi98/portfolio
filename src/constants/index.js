@@ -293,9 +293,6 @@ const technologies = {
       icon: firebase,
       link: "https://firebase.google.com/",
     },
-  ],
-
-  databases: [
     {
       name: "MongoDB",
       icon: mongodb,
