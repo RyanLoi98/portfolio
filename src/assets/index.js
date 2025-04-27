@@ -41,6 +41,9 @@ import pycharm from "./tech/pycharm.png";
 import clion from "./tech/clion.png";
 import webstorm from "./tech/webstorm.png";
 import datagrip from "./tech/datagrip.png";
+import mysqlworkbench from "./tech/mysqlworkbench.png";
+import mongodbcompass from "./tech/mongodbcompass.png";
+import vercel from "./tech/vercel.png";
 
 // Projects
 import carrent from "./carrent.png";
@@ -90,5 +93,8 @@ export {
   clion,
   webstorm,
   datagrip,
+  mysqlworkbench,
+  mongodbcompass,
+  vercel,
   
 };

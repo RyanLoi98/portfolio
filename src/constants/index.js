@@ -39,6 +39,10 @@ import {
   clion,
   webstorm,
   datagrip,
+  mysqlworkbench,
+  mongodbcompass,
+  vercel,
+  
 
 } from "../assets";
 
