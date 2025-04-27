@@ -245,7 +245,7 @@ const technologies = {
     {
       name: "ARM64 Assembly",
       icon: arm64,
-      link: "https://developer.arm.com/architectures/instruction-sets/a-profile-architecture",
+      link: "https://developer.arm.com/documentation/",
     },
   ],
 
@@ -347,37 +347,37 @@ const technologies = {
     {
       name: "IntelliJ",
       icon: intellij,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.jetbrains.com/idea/",
     },
     {
       name: "PyCharm",
       icon: pycharm,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.jetbrains.com/pycharm/",
     },
     {
       name: "CLion",
       icon: clion,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.jetbrains.com/clion/",
     },
     {
       name: "WebStorm",
       icon: webstorm,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.jetbrains.com/webstorm/",
     },
     {
       name: "DataGrip",
       icon: datagrip,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.jetbrains.com/datagrip/",
     },
     {
       name: "MySqlWorkbench",
       icon: mysqlworkbench,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.mysql.com/products/workbench/",
     },
     {
       name: "MonogDBCompass",
       icon: mongodbcompass,
-      link: "https://www.jetbrains.com/",
+      link: "https://www.mongodb.com/products/tools/compass",
     },
   ],
 
