@@ -23,6 +23,24 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png"
+import c from "./tech/c.png";
+import swift from "./tech/swift.png";
+import arm64 from "./tech/arm64.png";
+import threejs from "./tech/3js.png";
+import firebase from "./tech/firebase.png";
+import mysql from "./tech/mysql.png";
+import npm from "./tech/npm.png";
+import postman from "./tech/postman.png";
+import gitlab from "./tech/gitlab.png";
+import filezilla from "./tech/filezilla.png";
+import vsc from "./tech/vsc.png";
+import intellij from "./tech/intellij.png";
+import pycharm from "./tech/pycharm.png";
+import clion from "./tech/clion.png";
+import webstorm from "./tech/webstorm.png";
+import datagrip from "./tech/datagrip.png";
 
 // Projects
 import carrent from "./carrent.png";
@@ -53,5 +71,24 @@ export {
   educationmatterslogo,
   AdvanceHairSalonLogo,
   MustardSeedLogo,
-  EPScarlettLogo
+  EPScarlettLogo,
+  python,
+  java,
+  c,
+  swift,
+  arm64,
+  threejs,
+  firebase,
+  mysql,
+  npm,
+  postman,
+  gitlab,
+  filezilla,
+  vsc,
+  intellij,
+  pycharm,
+  clion,
+  webstorm,
+  datagrip,
+  
 };
