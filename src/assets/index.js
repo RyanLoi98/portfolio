@@ -44,6 +44,10 @@ import datagrip from "./tech/datagrip.png";
 import mysqlworkbench from "./tech/mysqlworkbench.png";
 import mongodbcompass from "./tech/mongodbcompass.png";
 import vercel from "./tech/vercel.png";
+import cloudinary from "./tech/cloudinary.png";
+import windows from "./tech/windows.png";
+import ubuntu from "./tech/ubuntu.png";
+import macos from "./tech/macos.png";
 
 // Projects
 import carrent from "./carrent.png";
@@ -96,5 +100,8 @@ export {
   mysqlworkbench,
   mongodbcompass,
   vercel,
-  
+  cloudinary,
+  windows,
+  ubuntu,
+  macos,
 };

@@ -42,7 +42,10 @@ import {
   mysqlworkbench,
   mongodbcompass,
   vercel,
-  
+  cloudinary,
+  windows,
+  ubuntu,
+  macos,
 
 } from "../assets";
 
