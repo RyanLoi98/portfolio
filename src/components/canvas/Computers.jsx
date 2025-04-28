@@ -73,21 +73,21 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
             : screenWidth >= 850
             ? 0.85
             : screenWidth >= 701
-            ? 0.80
+            ? 0.8
             : screenWidth >= 640
-            ? 0.70
+            ? 0.7
             : screenWidth >= 500
             ? 0.55
             : screenWidth >= 400
-            ? 0.50
+            ? 0.5
             : screenWidth >= 320
-            ? 0.40
+            ? 0.4
             : 0.3
         }
         position={
           screenWidth >= 1100
             ? [0, -1.7, -1.6]
-            :screenWidth >= 850
+            : screenWidth >= 850
             ? [0, -1.7, -1.6]
             : screenWidth >= 701
             ? [0, -0.6, -0.9]
@@ -136,11 +136,9 @@ const ComputersCanvas = () => {
       setShowModal(false);
       clearTimeout(timer);
       window.removeEventListener("mousedown", hideModal);
-      window.removeEventListener("scroll", hideModal);
     };
 
     window.addEventListener("mousedown", hideModal);
-    window.addEventListener("scroll", hideModal);
   };
 
   return (
@@ -176,12 +174,12 @@ const ComputersCanvas = () => {
         <div
           style={{
             position: "absolute",
-            top: "55%",
-            left: "45%",
+            top: "30%",
+            left: "50%",
             transform: "translateX(-50%)",
             background: "rgba(0, 0, 0, 0.8)",
             color: "white",
-            padding: "1rem 2rem",
+            padding: "1rem 1rem",
             borderRadius: "12px",
             zIndex: 10,
             fontSize: "1rem",
@@ -190,8 +188,9 @@ const ComputersCanvas = () => {
             transition: "opacity 0.5s ease",
           }}
         >
-          All 3D models on this site can be rotated — drag them around to try it
-          out!
+          Interact with the 3D models and animated cards throughout the site by
+          dragging, rotating, or hovering over them. Some cards are clickable
+          and provide additional information when selected.
         </div>
       )}
     </div>
