@@ -26,16 +26,21 @@ const Skills = () => {
   useEffect(() => {
     if (!isFirefox && !modalShown) {
       const observer = new IntersectionObserver(
-        ([entry]) => {
+        ([entry], observerInstance) => {
           if (entry.isIntersecting) {
             setShowModal(true);
             setModalShown(true);
-
+  
             const hideModal = () => {
               setShowModal(false);
               window.removeEventListener("mousedown", hideModal);
+  
+              // VERY IMPORTANT: stop observing after hiding the modal so the modal never shows up again
+              if (ballsContainerRef.current) {
+                observerInstance.unobserve(ballsContainerRef.current);
+              }
             };
-
+  
             window.addEventListener("mousedown", hideModal);
           }
         },
@@ -43,11 +48,11 @@ const Skills = () => {
           threshold: 0.2,
         }
       );
-
+  
       if (ballsContainerRef.current) {
         observer.observe(ballsContainerRef.current);
       }
-
+  
       return () => {
         if (ballsContainerRef.current) {
           observer.unobserve(ballsContainerRef.current);
@@ -55,6 +60,7 @@ const Skills = () => {
       };
     }
   }, [isFirefox, modalShown]);
+  
 
   return (
     <>
