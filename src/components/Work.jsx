@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_site_link,
 }) => {
   return (
     <motion.div
@@ -22,29 +23,47 @@ const ProjectCard = ({
       viewport={{ once: false, amount: 0.2 }}
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
-      <div onClick={() => window.open(source_code_link, "_blank")}>
-        <Tilt
-          options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-        >
-          <div className="relative w-fill h-[230px]">
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-2xl"
-            />
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                <img
-                  src={github}
-                  alt="github"
-                  className="w-1/2 h-1/2 object-contain"
-                />
-              </div>
+      <Tilt
+        options={{ max: 45, scale: 1, speed: 450 }}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      >
+        <div className="relative w-fill h-[230px]">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
+          />
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            
+            
+            {/* This is For the Github link icon */}
+            <div
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(source_code_link, "_blank")}
+            >
+              <img
+                src={github}
+                alt="github"
+                className="w-1/2 h-1/2 object-contain"
+              />
             </div>
+
+            {/* This is For the external link icon */}
+            { (live_site_link !== "") &&
+              <div
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2.5"
+              onClick={() => window.open(source_code_link, "_blank")}
+            >
+              <img
+                src={""}
+                alt= "Live"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+            }
           </div>
-        </Tilt>
-      </div>
+        </div>
+      </Tilt>
     </motion.div>
   );
 };
@@ -67,12 +86,13 @@ const Work = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          The following projects showcase my technical skills and hands-on
-          experience through real-world applications. Each includes a brief
-          description, along with links to the GitHub repository and live demo
-          where available. Together, they demonstrate my ability to solve
-          complex problems, work across a range of technologies, and manage
-          projects from concept to completion.
+          The projects below highlight my technical expertise and hands-on
+          experience through real-world applications. Each project includes a
+          concise description, along with links to the GitHub repository (via
+          the GitHub icon) and a live demo (via the external link icon), when
+          available. Together, these works demonstrate my ability to solve
+          complex problems, adapt to diverse technologies, and manage projects
+          from initial concept to final deployment.
         </motion.p>
       </div>
 
