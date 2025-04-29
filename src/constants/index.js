@@ -486,6 +486,5 @@ export {
   experiences,
   volunteering,
   technologies,
-  testimonials,
   projects,
 };
