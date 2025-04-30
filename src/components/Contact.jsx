@@ -36,6 +36,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
+          {/* Name Field */}
           <label className="flex flex-col">
             <span className="text-white mb-4">
               <span className="font-medium">Your Name</span>{" "}
@@ -46,10 +47,44 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Enter your name here"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
+
+          {/* Email Field */}
+          <label className="flex flex-col">
+            <span className="text-white mb-4">
+              <span className="font-medium">Your Email</span>{" "}
+              <span className="font-normal text-gray-300">(required)</span>
+            </span>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="What's your email address?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+
+          {/* Message Field */}
+          <label className="flex flex-col">
+            <span className="text-white mb-4">
+              <span className="font-medium">Message</span>{" "}
+              <span className="font-normal text-gray-300">(required)</span>
+            </span>
+            <textarea
+            rows="7"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="What do you want to say?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+
+          
         </form>
       </motion.div>
     </div>
