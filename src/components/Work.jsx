@@ -52,7 +52,7 @@ const ProjectCard = ({
             { (live_site_link !== "") &&
               <div
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2.5"
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(live_site_link, "_blank")}
             >
               <img
                 src={""}
@@ -62,6 +62,24 @@ const ProjectCard = ({
             </div>
             }
           </div>
+        </div>
+
+         {/* This is For the project description */}
+        <div className = "mt-5">
+            <h3 className ="text-white font-bold text-[24px]">{name}</h3>
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        </div>
+
+        {/* This is For the project tags */}
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p
+              key={tag.name}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
         </div>
       </Tilt>
     </motion.div>
