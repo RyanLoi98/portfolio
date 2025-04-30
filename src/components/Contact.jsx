@@ -26,13 +26,31 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
-        variants = {slideIn("left", "tween", 0.2, 1)}
+        variants={slideIn("left", "tween", 0.2, 1)}
       >
         <p className={styles.sectionSubText}>Get in Touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-
-        
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="mt-12 flex flex-col gap-8"
+        >
+          <label className="flex flex-col">
+            <span className="text-white mb-4">
+              <span className="font-medium">Your Name</span>{" "}
+              <span className="font-normal text-gray-300">(required)</span>
+            </span>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Enter your name here"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+        </form>
       </motion.div>
     </div>
   );
