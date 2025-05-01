@@ -1,14 +1,29 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, useAnimations } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
+  const group = useRef();
+  const { scene, animations } = useGLTF("./earth_cartoon/scene.gltf");
+  const { actions } = useAnimations(animations, group);
+
+  useEffect(() => {
+    // Start all available animations
+    Object.values(actions).forEach((action) => {
+      action.reset().play();
+    });
+  }, [actions]);
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <primitive
+      ref={group}
+      object={scene}
+      scale={1.25}
+      position-y={0}
+      rotation-y={0}
+    />
   );
 };
 
@@ -16,7 +31,7 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
@@ -27,9 +42,18 @@ const EarthCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
+        <ambientLight intensity={0.25} />
+        <directionalLight
+          position={[5, 5, 10]}
+          intensity={4}
+          castShadow
+          shadow-mapSize-width={1024}
+          shadow-mapSize-height={1024}
+        />
         <OrbitControls
           autoRotate
-          enableZoom={false}
+          autoRotateSpeed={0.75} 
+          enableZoom={true}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
