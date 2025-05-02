@@ -18,9 +18,47 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({...form, [name]: value});
+  };
+
+  const handleSubmit = (e) => {
+    // this stops the browser from resetting
+    e.preventDefault();
+    setLoading(true);    
+
+    emailjs.send(
+      "service_d1g4esg", 
+      "template_d6118bh", 
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+        time: new Date().toLocaleString("en-US", {
+          hour12: true,
+          timeZoneName: "short",
+        }),
+      },
+      "13SQdcFxuFdiWmF8D"
+    )
+    .then( ()=>{
+      setLoading(false);
+      alert("Thanks for your message, I will get back to you as soon as possible.");
+
+      setForm({
+        name:"",
+        email: "",
+        message:"",
+      })
+    }, (error)=> {
+      setLoading(false);
+      console.log(error);
+      alert("Something went wrong... Email not sent.")
+
+    })
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
