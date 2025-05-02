@@ -20,7 +20,7 @@ const ProjectCard = ({
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <Tilt
