@@ -432,7 +432,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
-    live_site_link: "",
+    live_site_link: "https://youtube.com",
   },
   {
     name: "Job IT",
@@ -454,7 +454,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
-    live_site_link: "test",
+    live_site_link: "",
   },
   {
     name: "Trip Guide",
