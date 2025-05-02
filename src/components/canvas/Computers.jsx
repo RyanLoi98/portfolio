@@ -55,7 +55,7 @@ const Computers = ({ screenWidth, onRotationComplete }) => {
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
-      <pointLight position={[-0.5, 2.5, 0.25]} intensity={4} />
+      <pointLight position={[-0.5, 2.25, 1.9]} intensity={4} />
       <spotLight
         position={[-30, 50, 10]}
         angle={0.12}
