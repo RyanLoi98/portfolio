@@ -5,7 +5,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import uofclogo from "./uofclogo.png";
 import EPScarlettLogo from "./EpScarlett.png";
-import mobile from "./mobile.png";
 import AlbertaGovLogo from "./AlbertaGovLogo.png";
 import educationmatterslogo from "./educationmatters.png";
 
@@ -73,7 +72,6 @@ export {
   jobit,
   tripguide,
   uofclogo,
-  mobile,
   AlbertaGovLogo,
   educationmatterslogo,
   AdvanceHairSalonLogo,
