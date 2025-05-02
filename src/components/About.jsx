@@ -57,7 +57,9 @@ const EducationCard = ({
               >
                 {title}
               </h4>
-              <p className="text-white-100 xxs:text-[17px] text-[14px] font-medium">{date}</p>
+              <p className="text-white-100 xxs:text-[17px] text-[14px] font-medium">
+                {date}
+              </p>
               <p className="text-white-100 xxs:text-[17px] text-[14px] font-medium">
                 GPA: {gpa}
               </p>
@@ -160,7 +162,7 @@ const AwardCard = ({ index, title, icon, date, points, link }) => {
 const About = () => {
   return (
     <>
-     {/*About and Overview Titles*/}
+      {/*About and Overview Titles*/}
       <motion.div
         variants={textVariant()}
         initial="hidden"
@@ -171,7 +173,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-        {/*Overview Text */}
+      {/*Overview Text */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary xxs:text-[20px] text-[16px] max-w-3xl leading-[30px]"
@@ -194,7 +196,14 @@ const About = () => {
         developer, collaborate with talented teams, and contribute to
         meaningful, impactful projects. <br /> <br />
         I'm eager to bring my skills and passion to a dynamic team — if you have
-        an opportunity you'd like to discuss, I'd love to connect.
+        an opportunity you'd like to discuss, I'd love to{" "}
+        <a
+          href="#contact"
+          className="text-blue-400 underline hover:text-blue-600"
+        >
+          connect
+        </a>
+        .
       </motion.p>
 
       {/*Education Title */}
@@ -230,7 +239,7 @@ const About = () => {
       >
         <h2 className={styles.sectionHeadText}>Awards.</h2>
       </motion.div>
-      
+
       {/*Awards Cards */}
       <motion.div
         className="mt-10 flex flex-wrap justify-center gap-10"
