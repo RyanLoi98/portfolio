@@ -8,6 +8,7 @@ import uofclogo from "./uofclogo.png";
 import EPScarlettLogo from "./EpScarlett.png";
 import AlbertaGovLogo from "./AlbertaGovLogo.png";
 import educationmatterslogo from "./educationmatters.png";
+import linkedin from "./linkedin.png";
 
 import AdvanceHairSalonLogo from "./company/Advance_Hair_Salon.png";
 
@@ -104,4 +105,5 @@ export {
   ubuntu,
   macos,
   externalLink,
+  linkedin,
 };
