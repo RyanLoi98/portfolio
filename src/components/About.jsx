@@ -23,7 +23,7 @@ const EducationCard = ({
 }) => {
   return (
     <Tilt
-      className="w-[450px]"
+      className="w-[450px] min-w-[290px]"
       tiltMaxAngleX={45}
       tiltMaxAngleY={45}
       scale={1}
@@ -107,7 +107,7 @@ const EducationCard = ({
 const AwardCard = ({ index, title, icon, date, points, link }) => {
   return (
     <Tilt
-      className="w-[275px]"
+      className="max-w-[275px] min-w-[275px]"
       tiltMaxAngleX={45}
       tiltMaxAngleY={45}
       scale={1}
