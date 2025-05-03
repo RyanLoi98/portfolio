@@ -16,7 +16,7 @@ import { textVariant,  fadeIn } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: "#1d1836", color: "#fff" }}
+    contentStyle={{ background: "#1d1836", color: "#fff", minWidth: "235x", }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
@@ -56,7 +56,7 @@ const ExperienceCard = ({ experience }) => (
 const VolunteeringCard = ({ index, Organization, icon, Position, points, link }) => {
   return (
     <Tilt
-      className="w-[475px]"
+      className="w-[475px] min-w-[275px]"
       tiltMaxAngleX={45}
       tiltMaxAngleY={45}
       scale={1}
