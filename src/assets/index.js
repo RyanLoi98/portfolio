@@ -3,6 +3,7 @@ import logo2 from "./logo2.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import externalLink from "./externalLink.png";
 import uofclogo from "./uofclogo.png";
 import EPScarlettLogo from "./EpScarlett.png";
 import AlbertaGovLogo from "./AlbertaGovLogo.png";
@@ -102,4 +103,5 @@ export {
   windows,
   ubuntu,
   macos,
+  externalLink,
 };

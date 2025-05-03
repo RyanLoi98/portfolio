@@ -2,7 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, externalLink } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -55,8 +55,8 @@ const ProjectCard = ({
               onClick={() => window.open(live_site_link, "_blank")}
             >
               <img
-                src={""}
-                alt= "Live"
+                src={externalLink}
+                alt= "site"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
