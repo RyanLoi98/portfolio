@@ -9,13 +9,18 @@ import { slideIn } from "../utils/motion";
 
 import { github, linkedin } from "../assets";
 
+// these are the keys for email.js, it comes from our .env file
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+// Google Recaptcha
+import ReCAPTCHA from "react-google-recaptcha";
+const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 const Contact = () => {
   const formRef = useRef();
+  const recaptchaRef = useRef(null);
 
   const [form, setForm] = useState({
     name: "",
@@ -27,49 +32,59 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     // this stops the browser from resetting
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
-          time: new Date().toLocaleString("en-US", {
-            hour12: true,
-            timeZoneName: "short",
-          }),
-        },
-        publicKey
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert(
-            "Thanks for your message, I will get back to you as soon as possible."
-          );
+    try {
+      // Manually execute reCAPTCHA when the user submits
+      const token = await recaptchaRef.current.executeAsync();
+      recaptchaRef.current.reset(); // Reset the reCAPTCHA widget after successful validation
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong... Email not sent.");
-        }
-      );
+      emailjs
+        .send(
+          serviceId,
+          templateId,
+          {
+            from_name: form.name,
+            from_email: form.email,
+            message: form.message,
+            "g-recaptcha-response": token,
+            time: new Date().toLocaleString("en-US", {
+              hour12: true,
+              timeZoneName: "short",
+            }),
+          },
+          publicKey
+        )
+        .then(
+          () => {
+            setLoading(false);
+            alert(
+              "Thanks for your message, I will get back to you as soon as possible."
+            );
+
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+            alert("Something went wrong... Email not sent.");
+          }
+        );
+    } catch (error) {
+      setLoading(false);
+      console.error("Recaptcha error:", error);
+      alert("reCAPTCHA failed. Please try again.");
+    }
   };
 
   return (
@@ -167,10 +182,17 @@ const Contact = () => {
             />
           </label>
 
+          <ReCAPTCHA
+            sitekey={recaptchaSiteKey}
+            size="invisible"
+            ref={recaptchaRef}
+          />
+
           <button
             type="submit"
             style={{ backgroundColor: "#1b143d" }}
             className="py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            onClick={() => recaptchaRef.current.execute()} // Manually trigger reCAPTCHA when submit is clicked
           >
             {loading ? "Sending..." : "Send"}
           </button>
