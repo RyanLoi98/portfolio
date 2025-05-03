@@ -44,7 +44,7 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="github"
-                className="w-1/2 h-1/2 object-contain"
+                className="w-3/4 h-3/4 object-contain"
               />
             </div>
 
@@ -57,7 +57,7 @@ const ProjectCard = ({
               <img
                 src={externalLink}
                 alt= "site"
-                className="w-1/2 h-1/2 object-contain"
+                className="w-3/5 h-3/5 object-contain"
               />
             </div>
             }
