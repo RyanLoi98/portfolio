@@ -9,6 +9,11 @@ import { slideIn } from "../utils/motion";
 
 import { github, linkedin } from "../assets";
 
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+
 const Contact = () => {
   const formRef = useRef();
 
@@ -33,8 +38,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_d1g4esg",
-        "template_d6118bh",
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           from_email: form.email,
@@ -44,7 +49,7 @@ const Contact = () => {
             timeZoneName: "short",
           }),
         },
-        "13SQdcFxuFdiWmF8D"
+        publicKey
       )
       .then(
         () => {
