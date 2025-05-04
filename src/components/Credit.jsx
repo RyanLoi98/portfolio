@@ -1,5 +1,3 @@
-import { SectionWrapper } from "../hoc";
-
 const Credit = () => {
   return (
     <div
