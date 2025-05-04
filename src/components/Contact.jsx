@@ -171,7 +171,9 @@ const Contact = () => {
               maxLength={320}
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               onInvalid={(e) =>
-                e.target.setCustomValidity("Please enter a valid email address with the format like so: name@example.com")
+                e.target.setCustomValidity(
+                  "Please enter a valid email address in the format: name@example.com"
+                )
               }
               onInput={(e) => e.target.setCustomValidity("")}
             />
@@ -207,8 +209,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            style={{ backgroundColor: "#1b143d" }}
-            className="py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer transform transition active:scale-90 hover:scale-100 bg-[#1b143d] hover:bg-[#2c1d5c]"
             onClick={() => recaptchaRef.current.execute()} // Manually trigger reCAPTCHA when submit is clicked
           >
             {loading ? "Sending..." : "Send"}
