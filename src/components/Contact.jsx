@@ -150,6 +150,7 @@ const Contact = () => {
               placeholder="What's your name?"
               required
               minLength={2}
+              maxLength={50}
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -197,7 +198,7 @@ const Contact = () => {
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
             <p className="text-sm text-gray-400 text-right">
-              {form.message.length}/1500 characters
+              {form.message.length}/1,500 characters
             </p>
           </label>
 
