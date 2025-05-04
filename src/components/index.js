@@ -9,6 +9,7 @@ import Experience from "./Experience";
 import Work from "./Work";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Credit from './Credit';
 
 
 export {
@@ -23,5 +24,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Credit,
 };
