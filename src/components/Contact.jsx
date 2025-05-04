@@ -83,7 +83,7 @@ const Contact = () => {
     } catch (error) {
       setLoading(false);
       console.error("Recaptcha error:", error);
-      alert("reCAPTCHA failed. Please try again.");
+      alert("Google reCAPTCHA verification failed. Please try again and ensure you have a valid email address and message.");
     }
   };
 
