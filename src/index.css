@@ -2,6 +2,13 @@
 
 @import "tailwindcss";
 
+@layer utilities {
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
+}
+
+
 @theme{
   --color-primary: #050816;
   --color-secondary: #aaa6c3;

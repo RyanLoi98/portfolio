@@ -197,6 +197,23 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        {/* reCAPTCHA badge message which is required when you make the reCAPTCHA badge invisible 
+        Source: https://developers.google.com/recaptcha/docs/faq#id-like-to-hide-the-recaptcha-badge.-what-is-allowed*/}
+        <p className="text-white mt-4 text-sm">
+          This site is protected by reCAPTCHA and the Google{" "}
+          <a
+            href="https://policies.google.com/privacy"
+            className="text-blue-500"
+          >
+            Privacy Policy
+          </a>{" "}
+          and{" "}
+          <a href="https://policies.google.com/terms" className="text-blue-500">
+            Terms of Service
+          </a>{" "}
+          apply.
+        </p>
       </motion.div>
 
       <motion.div
