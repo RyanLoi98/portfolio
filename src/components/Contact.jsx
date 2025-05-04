@@ -211,7 +211,7 @@ const Contact = () => {
           <button
             type="submit"
             className="py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer transform transition active:scale-90 hover:scale-100 bg-[#1b143d] hover:bg-[#2c1d5c]"
-            onClick={() => recaptchaRef.current.execute()} // Manually trigger reCAPTCHA when submit is clicked
+            disabled={loading}
           >
             {loading ? "Sending..." : "Send"}
           </button>
