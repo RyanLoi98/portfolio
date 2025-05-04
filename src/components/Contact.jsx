@@ -83,7 +83,9 @@ const Contact = () => {
     } catch (error) {
       setLoading(false);
       console.error("Recaptcha error:", error);
-      alert("Google reCAPTCHA verification failed. Please try again and ensure you have a valid email address and message.");
+      alert(
+        "Google reCAPTCHA verification failed. Please try again and ensure you have a valid email address and message."
+      );
     }
   };
 
@@ -146,6 +148,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
+              required
+              minLength={2}
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -162,7 +166,15 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
+              required
+              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+              minLength={5}
+              maxLength={320}
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Please enter a valid email address with the format like so: name@example.com")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
             />
           </label>
 
@@ -178,8 +190,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
+              required
+              maxLength={1500}
+              minLength={10}
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
+            <p className="text-sm text-gray-400 text-right">
+              {form.message.length}/1500 characters
+            </p>
           </label>
 
           <ReCAPTCHA
