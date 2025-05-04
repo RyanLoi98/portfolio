@@ -168,7 +168,6 @@ const Contact = () => {
               placeholder="What's your email address?"
               required
               pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-              minLength={5}
               maxLength={320}
               className="bg-tertiary py-4 px-5 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               onInvalid={(e) =>
