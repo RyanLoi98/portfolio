@@ -17,7 +17,7 @@ const Navbar = () => {
                     onClick = {() => {setActive(""); window.scrollTo(0, 0);}} 
                 >
                     <img src={logo} alt="profile logo" className = "w-12 h-12 object-contain"></img>
-                    <p className="text-white text-[18px] font-bolt cursor-pointer flex">Ryan Loi&nbsp;<span className = "lg:block hidden">| Software Developer</span></p>
+                    <p className="text-white text-[18px] font-bold cursor-pointer flex">Ryan Loi&nbsp;<span className = "lg:block hidden">| Software Developer</span></p>
                 </Link>
                 <ul className='list-none hidden md:flex flex-row gap-10'>
                     {navLinks.map((link) => (
