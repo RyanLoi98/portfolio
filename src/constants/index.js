@@ -167,13 +167,14 @@ const experiences = [
     date: "July 2013 - May 2024",
     duration: "10 years, 10 months",
     points: [
-      "Provided exceptional front-desk service by answering client inquiries, managing high-volume appointment scheduling, and ensuring a welcoming atmosphere for all guests.",
-      "Maintained a spotless salon environment by overseeing cleanliness standards, laundering towels, and organizing workstations to meet health and safety protocols.",
-      "Managed supply chain logistics, including ordering salon products, restocking inventory, and negotiating with vendors to reduce costs.",
-      "Oversaw daily financial operations, including cash handling, sales reconciliation, and basic bookkeeping to support accurate financial reporting.",
-      "Assisted in onboarding and training new team members, delivering guidance on company procedures, customer service standards, and point-of-sale systems.",
-      "Spearheaded weekly staff meetings to align team objectives, set performance goals, and foster a positive, collaborative work culture.",
+      "Delivered outstanding front-desk service by responding to client inquiries, coordinating high-volume appointment schedules, and cultivating a welcoming environment for all guests.",
+      "Upheld salon cleanliness by supervising sanitation protocols, laundering towels, and arranging workstations to exceed health and safety standards.",
+      "Streamlined supply chain operations by ordering salon products, monitoring inventory levels, and liaising with vendors to optimize cost efficiency.",
+      "Administered daily financial tasks, including cash reconciliation, transaction accuracy, and bookkeeping to support reliable financial documentation.",
+      "Facilitated onboarding and mentorship for new staff, training them on internal procedures, client engagement best practices, and POS systems.",
+      "Orchestrated weekly staff meetings to align team goals, set measurable performance benchmarks, and promote a culture of collaboration and accountability.",
     ],
+    
   },
 ];
 
