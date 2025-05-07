@@ -126,13 +126,13 @@ const Skills = () => {
 
           <div
             className="flex flex-row flex-wrap justify-center gap-10"
-            ref={category === "languages" || category === "frontend" ? ballsContainerRef : null}
+            ref={category === "languages" ? ballsContainerRef : null}
           >
             {items.map((technology, index) => {
               if (!isFirefox) {
-                // if not firefox then only render languages category and front end category as balls
+                // if not firefox then only render languages category category as balls
                 // the rest will be round skill cards
-                if (category === "languages" || category === "frontend") {
+                if (category === "languages") {
                   return (
                     <div className="w-28 h-28" key={technology.name}>
                       <BallCanvas
