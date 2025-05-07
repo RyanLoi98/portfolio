@@ -43,7 +43,7 @@ import {
   windows,
   ubuntu,
   macos,
-
+  selfcheckout1,
 } from "../assets";
 
 export const navLinks = [
@@ -171,7 +171,6 @@ const experiences = [
       "Facilitated onboarding and mentorship for new staff, training them on internal procedures, client engagement best practices, and POS systems.",
       "Orchestrated weekly staff meetings to align team goals, set measurable performance benchmarks, and promote a culture of collaboration and accountability.",
     ],
-    
   },
 ];
 
@@ -206,11 +205,10 @@ const volunteering = [
     points: [
       "Tutored elementary students in math and reading, helping them build confidence and improve their academic skills.",
       "Led fundraising efforts, securing donations to assemble 10–20+ food hampers (20+ lbs each) for food bank distribution.",
-      "Coordinated the \"Save the Tigers\" fundraiser, successfully raising funds to support endangered tiger conservation.",
+      'Coordinated the "Save the Tigers" fundraiser, successfully raising funds to support endangered tiger conservation.',
     ],
     link: "https://drepscarlett.cbe.ab.ca/",
   },
-
 ];
 
 const technologies = {
@@ -376,7 +374,6 @@ const technologies = {
     },
   ],
 
-
   cloud: [
     {
       name: "Vercel",
@@ -411,34 +408,29 @@ const technologies = {
 
 const projects = [
   {
-    name: "",
-    description:
-      "",
+    name: "Self Checkout Station",
+    description: `A Java and Java Swing-based self-checkout system developed as part of a software engineering course. 
+    The project features item scanning, total calculations, payment integration, receipt printing, and inventory management. 
+    JUnit testing was utilized to ensure reliability. Designed to teach event listener design techniques and teamwork within a 
+    large group of over 25 people, the project presented challenges in coordination and time management but was successfully completed as a one-off project.`,
     tags: [
       {
-        name: "react",
+        name: "Java",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Java Swing",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "JUnit",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
-    live_site_link: "https://youtube.com",
+    image: selfcheckout1,
+    source_code_link: "https://github.com/RyanLoi98/Self-Checkout-Station",
+    live_site_link: "",
   },
 ];
 
-export {
-  education,
-  awards,
-  experiences,
-  volunteering,
-  technologies,
-  projects,
-};
+export { education, awards, experiences, volunteering, technologies, projects };

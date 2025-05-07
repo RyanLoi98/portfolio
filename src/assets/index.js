@@ -51,7 +51,7 @@ import ubuntu from "./tech/ubuntu.png";
 import macos from "./tech/macos.png";
 
 // Projects
-
+import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
 
 export {
   logo,
@@ -101,4 +101,5 @@ export {
   macos,
   externalLink,
   linkedin,
+  selfcheckout1,
 };
