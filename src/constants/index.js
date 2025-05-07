@@ -49,6 +49,7 @@ import {
   colourability,
   HobbyHub,
   reactbootstrap,
+  formik,
 } from "../assets";
 
 export const navLinks = [
@@ -280,6 +281,11 @@ const technologies = {
       name: "Three.js",
       icon: threejs,
       link: "https://threejs.org/",
+    },
+    {
+      name: "Formik",
+      icon: formik,
+      link: "https://formik.org/",
     },
     {
       name: "Figma",
