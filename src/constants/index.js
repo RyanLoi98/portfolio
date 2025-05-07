@@ -45,6 +45,7 @@ import {
   ubuntu,
   macos,
   selfcheckout1,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -408,6 +409,60 @@ const technologies = {
 };
 
 const projects = [
+  {
+    name: "Software Developer Portfolio",
+    description: `A responsive, full-featured personal software developer portfolio built with React, Vite, and TailwindCSS, showcasing personal projects, 
+    work experience, education, technical skills, and more. Integrated with Three.js and Framer Motion for interactive 3D visuals and 
+    smooth animations. Includes a secure contact form using EmailJS and Google reCAPTCHA, with form validation handled via Regex. Designed 
+    for accessibility and performance, the app is responsive down to 300px and capped at 320px for optimal readability on all devices`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "EmailJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Regex",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Google reCAPTCHA",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Router",
+        color: "green-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/RyanLoi98/portfolio",
+    live_site_link: "https://portfolio-ryanloidevs-projects.vercel.app/",
+    youtube_link: "",
+  },
+
   {
     name: "Self Checkout Station",
     description: `A Java and Java Swing-based self-checkout system developed as part of a software engineering course. 

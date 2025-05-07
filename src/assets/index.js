@@ -53,6 +53,7 @@ import macos from "./tech/macos.png";
 
 // Projects
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
+import portfolio from "./projects/portfolio/portfolio.png";
 
 export {
   logo,
@@ -104,4 +105,5 @@ export {
   linkedin,
   selfcheckout1,
   youtube,
+  portfolio,
 };
