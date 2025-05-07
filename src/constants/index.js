@@ -46,6 +46,7 @@ import {
   macos,
   selfcheckout1,
   portfolio,
+  colourability,
 } from "../assets";
 
 export const navLinks = [
@@ -505,6 +506,43 @@ const projects = [
     ],
     image: selfcheckout1,
     source_code_link: "https://github.com/RyanLoi98/Self-Checkout-Station",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Graph 3-Colourability via SAT",
+    description: `This program was developed as part of my CPSC 413 (Design and Analysis of Algorithms I - Winter 2024) 
+    course, and solves the graph 3-colourability problem by reducing it to SAT using the PySAT library. 
+    It determines whether a given undirected graph (represented as an adjacency matrix) can be coloured using 3 colours 
+    (Red, Green, Blue) such that no two adjacent vertices share the same colour. The core logic is implemented in the 
+    colourSAT.py file utilizing PySAT's SAT solver and mathematical reductions learned in lecture. Essentially you would 
+    give this python3 function an input graph and it will return a boolean (true or false) indicating whether the input 
+    graph is 3-colorable`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PySAT",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Design and Analysis of Algorithms",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "3-colourability",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Graphs",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: colourability,
+    source_code_link: "https://github.com/RyanLoi98/CPSC413A4",
     live_site_link: "",
     youtube_link: "",
   },

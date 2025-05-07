@@ -54,6 +54,7 @@ import macos from "./tech/macos.png";
 // Projects
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
 import portfolio from "./projects/portfolio/portfolio.png";
+import colourability from "./projects/CPSC413A4/colourability.png";
 
 export {
   logo,
@@ -106,4 +107,5 @@ export {
   selfcheckout1,
   youtube,
   portfolio,
+  colourability,
 };
