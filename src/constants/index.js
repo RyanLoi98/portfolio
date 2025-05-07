@@ -50,6 +50,7 @@ import {
   HobbyHub,
   reactbootstrap,
   formik,
+  sass,
 } from "../assets";
 
 export const navLinks = [
@@ -276,6 +277,11 @@ const technologies = {
       name: "Tailwind CSS",
       icon: tailwind,
       link: "https://tailwindcss.com/",
+    },
+    {
+      name: "SASS",
+      icon: sass,
+      link: "https://sass-lang.com/",
     },
     {
       name: "Three.js",

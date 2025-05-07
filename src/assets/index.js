@@ -52,6 +52,7 @@ import ubuntu from "./tech/ubuntu.png";
 import macos from "./tech/macos.png";
 import reactbootstrap from "./tech/reactbootstrap.png";
 import formik from "./tech/formik.png";
+import sass from "./tech/sass.png";
 
 // Projects
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
@@ -114,5 +115,6 @@ export {
   HobbyHub,
   reactbootstrap,
   formik,
-
+  sass,
+  
 };
