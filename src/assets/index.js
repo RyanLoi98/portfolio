@@ -51,9 +51,7 @@ import ubuntu from "./tech/ubuntu.png";
 import macos from "./tech/macos.png";
 
 // Projects
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 
 export {
   logo,
@@ -70,9 +68,6 @@ export {
   nodejs,
   reactjs,
   tailwind,
-  carrent,
-  jobit,
-  tripguide,
   uofclogo,
   AlbertaGovLogo,
   educationmatterslogo,
