@@ -52,6 +52,7 @@ import {
   formik,
   sass,
   nodemon,
+  expressjs,
 
 } from "../assets";
 
@@ -322,6 +323,11 @@ const technologies = {
       name: "mySQL",
       icon: mysql,
       link: "https://www.mysql.com/",
+    },
+    {
+      name: "expressjs",
+      icon: expressjs,
+      link: "https://expressjs.com/",
     },
     {
       name: "nodemon",

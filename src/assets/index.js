@@ -54,6 +54,7 @@ import reactbootstrap from "./tech/reactbootstrap.png";
 import formik from "./tech/formik.png";
 import sass from "./tech/sass.png";
 import nodemon from "./tech/nodemon.png";
+import expressjs from "./tech/expressjs.png";
 
 
 // Projects
@@ -119,5 +120,5 @@ export {
   formik,
   sass,
   nodemon,
-  
+  expressjs,
 };
