@@ -51,6 +51,7 @@ Welcome to my developer portfolio! This project showcases my skills, work experi
 * **Regex**: Used for form validation and pattern matching.
 * **Google reCAPTCHA**: To protect the contact form from spam.
 * **React Router (Browser Router)**: For handling navigation between pages.
+* **Vercel**: For deploying the portfolio online.
 
 ---
 
