@@ -4,6 +4,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import externalLink from "./externalLink.png";
+import youtube from "./youtube.png";
 import uofclogo from "./uofclogo.png";
 import EPScarlettLogo from "./EpScarlett.png";
 import AlbertaGovLogo from "./AlbertaGovLogo.png";
@@ -102,4 +103,5 @@ export {
   externalLink,
   linkedin,
   selfcheckout1,
+  youtube,
 };

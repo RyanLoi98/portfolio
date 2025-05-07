@@ -1,6 +1,7 @@
 // This index.js file contains the constants (things like text descriptions, pictures etc) that will be used throughout the application, this makes changes easier
 // as it will be done all in one spot.
 
+import { color } from "framer-motion";
 import {
   javascript,
   html,
@@ -411,7 +412,7 @@ const projects = [
     name: "Self Checkout Station",
     description: `A Java and Java Swing-based self-checkout system developed as part of a software engineering course. 
     The project features item scanning, total calculations, payment integration, receipt printing, and inventory management. 
-    JUnit testing was utilized to ensure reliability. Designed to teach event listener design techniques and teamwork within a 
+    JUnit testing was utilized to ensure reliability. Designed to teach event listener design techniques, object-oriented programming, and teamwork within a 
     large group of over 25 people, the project presented challenges in coordination and time management but was successfully completed as a one-off project.`,
     tags: [
       {
@@ -426,10 +427,27 @@ const projects = [
         name: "JUnit",
         color: "pink-text-gradient",
       },
+      {
+        name: "Object-Oriented Programming",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Event Listeners",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Teamwork",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Software Engineering",
+        color: "pink-text-gradient",
+      },
     ],
     image: selfcheckout1,
     source_code_link: "https://github.com/RyanLoi98/Self-Checkout-Station",
     live_site_link: "",
+    youtube_link: "",
   },
 ];
 
