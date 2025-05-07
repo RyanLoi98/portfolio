@@ -48,6 +48,7 @@ import {
   portfolio,
   colourability,
   HobbyHub,
+  reactbootstrap,
 } from "../assets";
 
 export const navLinks = [
@@ -264,6 +265,11 @@ const technologies = {
       name: "React.js",
       icon: reactjs,
       link: "https://react.dev/",
+    },
+    {
+      name: "React Bootstrap",
+      icon: reactbootstrap,
+      link: "https://react-bootstrap.netlify.app/",
     },
     {
       name: "Tailwind CSS",

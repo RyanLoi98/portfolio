@@ -50,6 +50,7 @@ import cloudinary from "./tech/cloudinary.png";
 import windows from "./tech/windows.png";
 import ubuntu from "./tech/ubuntu.png";
 import macos from "./tech/macos.png";
+import reactbootstrap from "./tech/reactbootstrap.png";
 
 // Projects
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
@@ -110,4 +111,6 @@ export {
   portfolio,
   colourability,
   HobbyHub,
+  reactbootstrap,
+
 };
