@@ -55,6 +55,7 @@ import macos from "./tech/macos.png";
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
 import portfolio from "./projects/portfolio/portfolio.png";
 import colourability from "./projects/CPSC413A4/colourability.png";
+import HobbyHub from "./projects/HobbyHub/HobbyHub.png";
 
 export {
   logo,
@@ -108,4 +109,5 @@ export {
   youtube,
   portfolio,
   colourability,
+  HobbyHub,
 };

@@ -47,6 +47,7 @@ import {
   selfcheckout1,
   portfolio,
   colourability,
+  HobbyHub,
 } from "../assets";
 
 export const navLinks = [
@@ -466,6 +467,88 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/portfolio",
     live_site_link: "https://portfolio-ryanloidevs-projects.vercel.app/",
     youtube_link: "",
+  },
+
+  {
+    name: "HobbyHub",
+    description: `Hobby Hub is a React-based platform for hobbyists to connect, share, and trade collectibles. 
+    Unlike forums or Reddit, it integrates a built-in marketplace, reducing risks of dealing with unknown sellers. 
+    Built with React, MongoDB, Express.js, Bootstrap, Cloudinary, and Docker, key challenges included managing large 
+    user data, interactions, and implementing an intuitive moderation system. Currently in beta stage.`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sass/Scss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React Bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Router Dom",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React-Responsive",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongoose",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "nodemon",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Formik",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "yup",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "JsonWebToken",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Cookie-parser",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React-icons",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "libphonenumber-js",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "react-phone-input-2",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: HobbyHub,
+    source_code_link: "https://github.com/RyanLoi98/HobbyHub",
+    live_site_link: "",
+    youtube_link: "https://www.youtube.com/watch?v=QE0Vf02w0C8&feature=youtu.be",
   },
 
   {
