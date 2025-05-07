@@ -1,5 +1,8 @@
 # Ryan Loi's Developer Portfolio Page 🚀
 
+![Portfolio Image](https://i.imgur.com/srJ6aqM.png)
+
+
 Welcome to my developer portfolio! This project showcases my skills, work experience, education, and technical expertise. Built using **ReactJS**, **Vite**, **TailwindCSS**, and more, feel free to explore and learn about my work!
 
 🔗 **View the live site**: [https://portfolio-ryanloidevs-projects.vercel.app/](https://portfolio-ryanloidevs-projects.vercel.app/)
