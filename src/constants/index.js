@@ -51,6 +51,8 @@ import {
   reactbootstrap,
   formik,
   sass,
+  nodemon,
+
 } from "../assets";
 
 export const navLinks = [
@@ -320,6 +322,11 @@ const technologies = {
       name: "mySQL",
       icon: mysql,
       link: "https://www.mysql.com/",
+    },
+    {
+      name: "nodemon",
+      icon: nodemon,
+      link: "https://nodemon.io/",
     },
   ],
 

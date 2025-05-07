@@ -53,6 +53,8 @@ import macos from "./tech/macos.png";
 import reactbootstrap from "./tech/reactbootstrap.png";
 import formik from "./tech/formik.png";
 import sass from "./tech/sass.png";
+import nodemon from "./tech/nodemon.png";
+
 
 // Projects
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
@@ -116,5 +118,6 @@ export {
   reactbootstrap,
   formik,
   sass,
+  nodemon,
   
 };
