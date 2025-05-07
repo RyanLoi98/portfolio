@@ -456,6 +456,10 @@ const projects = [
         name: "React Router",
         color: "green-text-gradient",
       },
+      {
+        name: "Vercel",
+        color: "pink-text-gradient",
+      },
     ],
     image: portfolio,
     source_code_link: "https://github.com/RyanLoi98/portfolio",
