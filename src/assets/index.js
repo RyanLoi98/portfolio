@@ -62,6 +62,7 @@ import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
 import portfolio from "./projects/portfolio/portfolio.png";
 import colourability from "./projects/CPSC413A4/colourability.png";
 import HobbyHub from "./projects/HobbyHub/HobbyHub.png";
+import HairSalonDatabase from "./projects/HairSalonDatabase/HairSalonDatabase.png";
 
 export {
   logo,
@@ -121,4 +122,6 @@ export {
   sass,
   nodemon,
   expressjs,
+  HairSalonDatabase,
+  
 };

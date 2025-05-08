@@ -53,6 +53,8 @@ import {
   sass,
   nodemon,
   expressjs,
+  HairSalonDatabase,
+
 
 } from "../assets";
 
@@ -580,6 +582,58 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/HobbyHub",
     live_site_link: "",
     youtube_link: "https://www.youtube.com/watch?v=QE0Vf02w0C8&feature=youtu.be",
+  },
+
+  {
+    name: "Hair Salon Database",
+    description: `Hair Salon Database is a full-stack system built to streamline daily operations for a salon business. It 
+    manages everything from inventory and pricing to employees, clients, expenses, suppliers, and transactions. Developed 
+    with React, MySQL, Express.js, Bootstrap, and Node.js, the system features a secure, connected front-end and back-end 
+    architecture, complete with a normalized relational database. Built collaboratively by a team of three for our Fall 2023 
+    CPSC 471 Database Management Systems course, this project tackles challenges such as scalable schema design, sensitive data 
+    handling (e.g., payments, accounts), and CRUD operations across multiple tables.`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React Bootstrap",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React-Router-Dom",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React-Icons",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Axios",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: HairSalonDatabase,
+    source_code_link: "https://github.com/RyanLoi98/HairSalonDatabase",
+    live_site_link: "",
+    youtube_link: "",
   },
 
   {
