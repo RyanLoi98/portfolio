@@ -64,6 +64,7 @@ import colourability from "./projects/CPSC413A4/colourability.png";
 import HobbyHub from "./projects/HobbyHub/HobbyHub.png";
 import HairSalonDatabase from "./projects/HairSalonDatabase/HairSalonDatabase.png";
 import CoinGame from "./projects/Coin Game/Coin Game.png";
+import MaxSubArray from "./projects/MaxSubArray/MaxSubArray.png";
 
 export {
   logo,
@@ -125,5 +126,6 @@ export {
   expressjs,
   HairSalonDatabase,
   CoinGame,
+  MaxSubArray,
   
 };

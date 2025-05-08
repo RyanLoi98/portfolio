@@ -55,6 +55,7 @@ import {
   expressjs,
   HairSalonDatabase,
   CoinGame,
+  MaxSubArray,
 
 } from "../assets";
 
@@ -748,6 +749,41 @@ const projects = [
     ],
     image: CoinGame,
     source_code_link: "https://github.com/RyanLoi98/CPSC413A3",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Recursive Maximum Subarray Sum",
+    description: `This is my solution to Assignment 2, Question #4 for CPSC 413 (Design and Analysis of Algorithms I - Winter 2024) 
+    at the University of Calgary. This program implements a recursive algorithm—as taught in lecture for computing the maximum possible 
+    sum of any contiguous subarray that lies entirely between a defined start and end index (inclusive). It follows the 
+    divide-and-conquer strategy from lecture and intentionally avoids optimizations such as dynamic programming or removing recursive 
+    calls, as per assignment instructions.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Recursion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Divide and Conquer",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Arrays",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Design and Analysis of Algorithms",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: MaxSubArray,
+    source_code_link: "https://github.com/RyanLoi98/CPSC413A2",
     live_site_link: "",
     youtube_link: "",
   },
