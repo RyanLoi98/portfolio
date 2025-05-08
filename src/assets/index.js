@@ -63,6 +63,7 @@ import portfolio from "./projects/portfolio/portfolio.png";
 import colourability from "./projects/CPSC413A4/colourability.png";
 import HobbyHub from "./projects/HobbyHub/HobbyHub.png";
 import HairSalonDatabase from "./projects/HairSalonDatabase/HairSalonDatabase.png";
+import CoinGame from "./projects/Coin Game/Coin Game.png";
 
 export {
   logo,
@@ -123,5 +124,6 @@ export {
   nodemon,
   expressjs,
   HairSalonDatabase,
+  CoinGame,
   
 };

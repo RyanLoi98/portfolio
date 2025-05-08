@@ -54,7 +54,7 @@ import {
   nodemon,
   expressjs,
   HairSalonDatabase,
-
+  CoinGame,
 
 } from "../assets";
 
@@ -697,20 +697,57 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Design and Analysis of Algorithms",
-        color: "pink-text-gradient",
+        name: "Graphs",
+        color: "blue-text-gradient",
       },
       {
         name: "3-colourability",
         color: "orange-text-gradient",
       },
       {
-        name: "Graphs",
-        color: "blue-text-gradient",
+        name: "Design and Analysis of Algorithms",
+        color: "pink-text-gradient",
       },
     ],
     image: colourability,
     source_code_link: "https://github.com/RyanLoi98/CPSC413A4",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Optimal Coin Game",
+    description: `This is my CPSC 413 (Design and Analysis of Algorithms I - Winter 2024) assignment 3 question #3 at the 
+    University of Calgary. This Program implements a dynamic programming solution to the classic two-player optimal 
+    coin-picking game. Given an array of coin values, this Python 3 program determines the best strategy for the current 
+    player to maximize their winnings assuming both players play optimally. The core logic is implemented in the Game class 
+    using memoization to avoid redundant subproblem calculations. The function returns three key pieces of information: the 
+    maximum sum the current player can achieve, the margin of victory (or loss), and whether the optimal first move is to 
+    take the coin on the left or the right.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamic Programming",
+        color: "green-text-gradient",
+      },
+      {
+        name: "memoization",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Recursion",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Design and Analysis of Algorithms",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: CoinGame,
+    source_code_link: "https://github.com/RyanLoi98/CPSC413A3",
     live_site_link: "",
     youtube_link: "",
   },
