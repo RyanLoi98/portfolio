@@ -55,7 +55,7 @@ import formik from "./tech/formik.png";
 import sass from "./tech/sass.png";
 import nodemon from "./tech/nodemon.png";
 import expressjs from "./tech/expressjs.png";
-
+import Glitch from "./tech/Glitch.png";
 
 // Projects
 import selfcheckout1 from "./projects/selfcheckout/selfcheckout1.png";
@@ -129,5 +129,5 @@ export {
   CoinGame,
   MaxSubArray,
   ClassScheduler,
-  
+  Glitch,
 };

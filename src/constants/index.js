@@ -57,6 +57,7 @@ import {
   CoinGame,
   MaxSubArray,
   ClassScheduler,
+  Glitch,
 
 } from "../assets";
 
@@ -423,6 +424,11 @@ const technologies = {
       name: "Cloudinary",
       icon: cloudinary,
       link: "https://cloudinary.com/",
+    },
+    {
+      name: "Glitch",
+      icon: Glitch,
+      link: "https://glitch.com/",
     },
   ],
 
