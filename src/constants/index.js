@@ -56,6 +56,7 @@ import {
   HairSalonDatabase,
   CoinGame,
   MaxSubArray,
+  ClassScheduler,
 
 } from "../assets";
 
@@ -784,6 +785,42 @@ const projects = [
     ],
     image: MaxSubArray,
     source_code_link: "https://github.com/RyanLoi98/CPSC413A2",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Class Scheduler",
+    description: `This is my solution to Assignment 1, Question #5 for CPSC 413 (Design and Analysis of Algorithms I - Winter 2024) 
+    at the University of Calgary. The problem in this program revolves around scheduling classes at a hypothetical "Chaos University" 
+    and goes as follows: At Chaos University, class schedules are chaotic — they can start and end at arbitrary times during the week. 
+    As a student who wants to attend as many classes as possible (and doesn't care which), your goal is to choose the maximum number of 
+    non-overlapping classes between the time you arrive on campus and the time you leave for work, ensuring at least 10 units of time 
+    between any two classes to allow for commuting across campus.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Interval Scheduling",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Greedy Algorithms",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Sorting",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Design and Analysis of Algorithms",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ClassScheduler,
+    source_code_link: "https://github.com/RyanLoi98/CPSC413A1",
     live_site_link: "",
     youtube_link: "",
   },

@@ -65,6 +65,7 @@ import HobbyHub from "./projects/HobbyHub/HobbyHub.png";
 import HairSalonDatabase from "./projects/HairSalonDatabase/HairSalonDatabase.png";
 import CoinGame from "./projects/Coin Game/Coin Game.png";
 import MaxSubArray from "./projects/MaxSubArray/MaxSubArray.png";
+import ClassScheduler from "./projects/Class Scheduler/ClassScheduler.png";
 
 export {
   logo,
@@ -127,5 +128,6 @@ export {
   HairSalonDatabase,
   CoinGame,
   MaxSubArray,
+  ClassScheduler,
   
 };
