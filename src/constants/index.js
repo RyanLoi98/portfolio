@@ -58,6 +58,7 @@ import {
   MaxSubArray,
   ClassScheduler,
   Glitch,
+  GuardianAngel,
 
 } from "../assets";
 
@@ -589,7 +590,7 @@ const projects = [
     image: HobbyHub,
     source_code_link: "https://github.com/RyanLoi98/HobbyHub",
     live_site_link: "",
-    youtube_link: "https://www.youtube.com/watch?v=QE0Vf02w0C8&feature=youtu.be",
+    youtube_link: "https://youtu.be/QE0Vf02w0C8",
   },
 
   {
@@ -642,6 +643,44 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/HairSalonDatabase",
     live_site_link: "",
     youtube_link: "",
+  },
+
+  {
+    name: "Guardian Angel",
+    description: `Guardian Angel is a proxemics web application designed for my CPSC 581 (Human-Computer Interaction II) course. The 
+    concept was inspired by my grandmother, who faced mobility and vision challenges due to Parkinson's, arthritis, and cataracts. The 
+    app includes features like fall detection, sleep fall prevention, object detection, and anti-theft mode, aimed at improving safety 
+    and independence for users: with mobility issues, vision challenges, and require more assistance like my grandmother.`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Proxemics",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "js-aruco2",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Glitch",
+        color: "green-text-gradient",
+      },
+    ],
+    image: GuardianAngel,
+    source_code_link: "https://github.com/RyanLoi98/GuardianAngel",
+    live_site_link: "https://cpsc-581-individual-project.glitch.me",
+    youtube_link: "https://www.youtube.com/watch?v=8Nj8ePU1TnI",
   },
 
   {

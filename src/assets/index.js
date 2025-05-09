@@ -66,6 +66,7 @@ import HairSalonDatabase from "./projects/HairSalonDatabase/HairSalonDatabase.pn
 import CoinGame from "./projects/Coin Game/Coin Game.png";
 import MaxSubArray from "./projects/MaxSubArray/MaxSubArray.png";
 import ClassScheduler from "./projects/Class Scheduler/ClassScheduler.png";
+import GuardianAngel from "./projects/GuardianAngel/GuardianAngel.png";
 
 export {
   logo,
@@ -130,4 +131,5 @@ export {
   MaxSubArray,
   ClassScheduler,
   Glitch,
+  GuardianAngel,
 };
