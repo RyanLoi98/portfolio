@@ -676,6 +676,10 @@ const projects = [
         name: "Glitch",
         color: "green-text-gradient",
       },
+        {
+        name: "Human Computer Interaction II",
+        color: "pink-text-gradient",
+      },
     ],
     image: GuardianAngel,
     source_code_link: "https://github.com/RyanLoi98/GuardianAngel",
