@@ -506,6 +506,10 @@ const projects = [
         name: "Vercel",
         color: "pink-text-gradient",
       },
+      {
+        name: "Web Development",
+        color: "orange-text-gradient",
+      },
     ],
     image: portfolio,
     source_code_link: "https://github.com/RyanLoi98/portfolio",
@@ -588,6 +592,14 @@ const projects = [
         name: "react-phone-input-2",
         color: "blue-text-gradient",
       },
+      {
+        name: "REST API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "pink-text-gradient",
+      },
     ],
     image: HobbyHub,
     source_code_link: "https://github.com/RyanLoi98/HobbyHub",
@@ -640,6 +652,14 @@ const projects = [
         name: "Axios",
         color: "blue-text-gradient",
       },
+      {
+        name: "REST API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "pink-text-gradient",
+      },
     ],
     image: HairSalonDatabase,
     source_code_link: "https://github.com/RyanLoi98/HairSalonDatabase",
@@ -681,6 +701,10 @@ const projects = [
       {
         name: "Human Computer Interaction II",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "orange-text-gradient",
       },
     ],
     image: GuardianAngel,
@@ -724,6 +748,10 @@ const projects = [
         name: "Human Computer Interaction II",
         color: "pink-text-gradient",
       },
+      {
+        name: "Web Development",
+        color: "orange-text-gradient",
+      },
     ],
     image: CreativePhoneUnlock,
     source_code_link: "https://github.com/RyanLoi98/CreativePhoneUnlock",
@@ -731,7 +759,7 @@ const projects = [
     youtube_link: "https://www.youtube.com/watch?v=tJ-h8diWiFg",
   },
 
- {
+  {
     name: "A Tale of 2 Buttons",
     description: `This is a web application designed to offer a fun and creative way to explore a person's emotional connections 
     we have with food, particularly ramen. The game challenges players to create a personalized ramen bowl using two simple buttons, each representing 
@@ -758,6 +786,10 @@ const projects = [
       {
         name: "Human Computer Interaction II",
         color: "blue-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "green-text-gradient",
       },
     ],
     image: Taleof2Buttons,
@@ -795,9 +827,13 @@ const projects = [
         name: "Web-Based Systems",
         color: "blue-text-gradient",
       },
-       {
+      {
         name: "Open Trivia Database API",
         color: "green-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "pink-text-gradient",
       },
     ],
     image: QuizWhiz,
