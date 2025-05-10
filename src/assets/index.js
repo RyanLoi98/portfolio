@@ -71,6 +71,7 @@ import CreativePhoneUnlock from "./projects/CreativePhoneUnlock/CreativePhoneUnl
 import Taleof2Buttons from "./projects/Taleof2Buttons/Taleof2Buttons.png";
 import QuizWhiz from "./projects/QuizWhiz/QuizWhiz.png";
 import JobHub from "./projects/JobHub/JobHub.png";
+import LibraryKiosk from "./projects/Library Kiosk/LibraryKiosk.png";
 
 export {
   logo,
@@ -140,4 +141,6 @@ export {
   Taleof2Buttons,
   QuizWhiz,
   JobHub,
+  LibraryKiosk,
+  
 };

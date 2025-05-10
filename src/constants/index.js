@@ -63,6 +63,7 @@ import {
   Taleof2Buttons,
   QuizWhiz,
   JobHub,
+  LibraryKiosk,
 } from "../assets";
 
 export const navLinks = [
@@ -917,6 +918,56 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/QuizWhiz",
     live_site_link: "https://quiz-whiz-three.vercel.app/",
     youtube_link: "",
+  },
+
+  {
+    name: "Library Kiosk",
+    description: `This project was developed as part of CPSC 481 (Fall 2023), a Human-Computer Interaction (HCI) course at the University of Calgary. 
+    The goal was to design and prototype a creative, intuitive, and user-friendly front-end interface. We chose to rebuild the Calgary Public Library’s 
+    interactive front-end kiosk system focusing on improving usability and accessibility. This is a front-end only application with no back-end implementation, 
+    ensuring a direct focus on HCI design principles. Note: this project is designed to be used on fixed kiosks with a 16:9 aspect ratio and a minimum screen size of 1920x1080 pixels.`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React Router Dom",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Human Computer Interaction",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: LibraryKiosk,
+    source_code_link: "https://github.com/RyanLoi98/LibraryKiosk",
+    live_site_link: "https://library-kiosk-mu.vercel.app/",
+    youtube_link: "https://youtu.be/8AlpN_8Rhks",
   },
 
   {
