@@ -60,6 +60,7 @@ import {
   Glitch,
   GuardianAngel,
   CreativePhoneUnlock,
+  Taleof2Buttons,
 } from "../assets";
 
 export const navLinks = [
@@ -727,6 +728,41 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/CreativePhoneUnlock",
     live_site_link: "https://creative-phone-unlock.glitch.me/",
     youtube_link: "https://www.youtube.com/watch?v=tJ-h8diWiFg",
+  },
+
+ {
+    name: "A Tale of 2 Buttons",
+    description: `This is a web application designed to offer a fun and creative way to explore a person's emotional connections 
+    we have with food, particularly ramen. The game challenges players to create a personalized ramen bowl using two simple buttons, each representing 
+    a choice with unique consequences. The twist? Players must manage their budget while making these decisions, adding an element of strategy and realism 
+    to the experience. This project was developed as part of the CPSC 581 Human-Computer Interaction II (Fall 2024) course, with a focus on imaginative and 
+    user-friendly design, and a unique gameplay experience that tells an inspiring story with just two buttons.`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Glitch",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Human Computer Interaction II",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Taleof2Buttons,
+    source_code_link: "https://github.com/RyanLoi98/ATaleof2Buttons",
+    live_site_link: "https://a-tale-of-2-buttons.glitch.me",
+    youtube_link: "https://youtu.be/PXKVLONcRb4",
   },
 
   {

@@ -68,6 +68,7 @@ import MaxSubArray from "./projects/MaxSubArray/MaxSubArray.png";
 import ClassScheduler from "./projects/Class Scheduler/ClassScheduler.png";
 import GuardianAngel from "./projects/GuardianAngel/GuardianAngel.png";
 import CreativePhoneUnlock from "./projects/CreativePhoneUnlock/CreativePhoneUnlock.jpg";
+import Taleof2Buttons from "./projects/Taleof2Buttons/Taleof2Buttons.png";
 
 export {
   logo,
@@ -134,4 +135,5 @@ export {
   Glitch,
   GuardianAngel,
   CreativePhoneUnlock,
+  Taleof2Buttons,
 };
