@@ -111,8 +111,11 @@ const Work = () => {
 
       <div className="w-full flex">
         <motion.p
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] !opacity-100"
         >
           The projects below showcase my technical skills and practical
           experience through real-world applications. Each project includes: a
