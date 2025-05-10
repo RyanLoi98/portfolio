@@ -62,6 +62,7 @@ import {
   CreativePhoneUnlock,
   Taleof2Buttons,
   QuizWhiz,
+  JobHub,
 } from "../assets";
 
 export const navLinks = [
@@ -605,6 +606,82 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/HobbyHub",
     live_site_link: "",
     youtube_link: "https://youtu.be/QE0Vf02w0C8",
+  },
+
+  {
+    name: "Job Hub",
+    description: `Job Hub is a full-stack job board web application developed for SENG 401 (Winter 2024), designed to connect job seekers with employers. 
+  Built with React, Express.js, Node.js, React Bootstrap, JWT, and MongoDB, it follows a REST API and MVC architecture to ensure scalability and modularity. 
+  The platform enables users to post, search, and apply for jobs with ease. Comprehensive testing was implemented using Jest and Selenium, 
+  ensuring both backend reliability and frontend usability. Key challenges included maintaining secure authentication, seeding realistic data, 
+  and supporting seamless interaction between multiple user roles.`,
+
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React Bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Router Dom",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongoose",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Rest API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MVC Architecture",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Jest",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Selenium",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "JsonWebToken",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Software Engineering",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: JobHub,
+    source_code_link: "https://github.com/RyanLoi98/JobHub",
+    live_site_link: "",
+    youtube_link: "https://youtu.be/Hv54rzyEkJE",
   },
 
   {
