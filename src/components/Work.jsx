@@ -22,7 +22,8 @@ const ProjectCard = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}
-      variants={fadeIn("up", "spring", (index % 3)*0.5, 0.75)}
+      // we are using remainder division here for the index, so if there are alot of cards the delay doesn't make loading take forever)
+      variants={fadeIn("up", "spring", (index % 3) * 0.5, 0.75)}
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
