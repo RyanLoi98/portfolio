@@ -29,7 +29,7 @@ const ProjectCard = ({
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl xl:w-[365px] lg:w-[434px] sm:w-[570px] w-full xl:min-h-[831px] lg:min-h-[760px] mb-5"
+        className="bg-tertiary p-5 rounded-2xl xl:w-[365px] lg:w-[434px] sm:w-[570px] w-full xl:min-h-[831px] lg:min-h-[760px] mb-5 flex flex-col"
       >
         <div className="relative w-fill h-[230px]">
           <img
@@ -81,7 +81,7 @@ const ProjectCard = ({
         </div>
 
         {/* This is For the project description */}
-        <div className="mt-5">
+        <div className="mt-5 flex flex-col flex-grow">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
