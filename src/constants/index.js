@@ -61,6 +61,7 @@ import {
   GuardianAngel,
   CreativePhoneUnlock,
   Taleof2Buttons,
+  QuizWhiz,
 } from "../assets";
 
 export const navLinks = [
@@ -763,6 +764,46 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/ATaleof2Buttons",
     live_site_link: "https://a-tale-of-2-buttons.glitch.me",
     youtube_link: "https://youtu.be/PXKVLONcRb4",
+  },
+
+  {
+    name: "QuizWhiz",
+    description: `Built for SENG 513 - Web-Based Systems (Winter 2024), QuizWhiz is an interactive quiz web application that allows 
+    users to play a 10 question quiz game with random questions taken from an online trivia database featuring easy, medium, and 
+    hard questions from entertainment, video games, history, science, geography, modern pop culture and much more. Designed with 
+    user experience and educational engagement in mind, it supports: a multiple choice approach, scoring, and a high score arcade 
+    style tracking system — all built with vanilla JavaScript, HTML5, and CSS3. "Whether you're a teenager looking to pass the time 
+    or an adult eager to challenge your friends with fun and quirky trivia, QuizWhiz has something for everyone!"`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Web-Based Systems",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Open Trivia Database API",
+        color: "green-text-gradient",
+      },
+    ],
+    image: QuizWhiz,
+    source_code_link: "https://github.com/RyanLoi98/QuizWhiz",
+    live_site_link: "https://quiz-whiz-three.vercel.app/",
+    youtube_link: "",
   },
 
   {

@@ -69,6 +69,7 @@ import ClassScheduler from "./projects/Class Scheduler/ClassScheduler.png";
 import GuardianAngel from "./projects/GuardianAngel/GuardianAngel.png";
 import CreativePhoneUnlock from "./projects/CreativePhoneUnlock/CreativePhoneUnlock.jpg";
 import Taleof2Buttons from "./projects/Taleof2Buttons/Taleof2Buttons.png";
+import QuizWhiz from "./projects/QuizWhiz/QuizWhiz.png";
 
 export {
   logo,
@@ -136,4 +137,5 @@ export {
   GuardianAngel,
   CreativePhoneUnlock,
   Taleof2Buttons,
+  QuizWhiz,
 };
