@@ -67,6 +67,7 @@ import CoinGame from "./projects/Coin Game/Coin Game.png";
 import MaxSubArray from "./projects/MaxSubArray/MaxSubArray.png";
 import ClassScheduler from "./projects/Class Scheduler/ClassScheduler.png";
 import GuardianAngel from "./projects/GuardianAngel/GuardianAngel.png";
+import CreativePhoneUnlock from "./projects/CreativePhoneUnlock/CreativePhoneUnlock.jpg";
 
 export {
   logo,
@@ -132,4 +133,5 @@ export {
   ClassScheduler,
   Glitch,
   GuardianAngel,
+  CreativePhoneUnlock,
 };

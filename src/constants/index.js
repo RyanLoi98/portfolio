@@ -59,7 +59,7 @@ import {
   ClassScheduler,
   Glitch,
   GuardianAngel,
-
+  CreativePhoneUnlock,
 } from "../assets";
 
 export const navLinks = [
@@ -647,7 +647,7 @@ const projects = [
 
   {
     name: "Guardian Angel",
-    description: `Guardian Angel is a proxemics web application designed for my CPSC 581 (Human-Computer Interaction II) course. The 
+    description: `Guardian Angel is a proxemics web application designed for my CPSC 581 (Human-Computer Interaction II - Fall 2024) course. The 
     concept was inspired by my grandmother, who faced mobility and vision challenges due to Parkinson's, arthritis, and cataracts. The 
     app includes features like fall detection, sleep fall prevention, object detection, and anti-theft mode, aimed at improving safety 
     and independence for users: with mobility issues, vision challenges, and require more assistance like my grandmother.`,
@@ -676,7 +676,7 @@ const projects = [
         name: "Glitch",
         color: "green-text-gradient",
       },
-        {
+      {
         name: "Human Computer Interaction II",
         color: "pink-text-gradient",
       },
@@ -685,6 +685,48 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/GuardianAngel",
     live_site_link: "https://cpsc-581-individual-project.glitch.me",
     youtube_link: "https://www.youtube.com/watch?v=8Nj8ePU1TnI",
+  },
+
+  {
+    name: "Creative Phone unlock",
+    description: `Creative Phone Unlock was developed for my course CPSC 581 (Human Computer Interaction II - Fall 2024) 
+    Assignment 2, with the goal of creating a imaginative and creative phone unlock utilizing as many phone sensors as possible. 
+    The system incorporates ambient light sensing, gyroscope orientation data, and camera-based machine vision hand gesture 
+    recognition (via Google media pipe) to create multi-step authentication challenges that prevent accidental and unauthorized device unlocks.`,
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Machine Vision",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Phone Sensors",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Glitch",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Human Computer Interaction II",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: CreativePhoneUnlock,
+    source_code_link: "https://github.com/RyanLoi98/CreativePhoneUnlock",
+    live_site_link: "https://creative-phone-unlock.glitch.me/",
+    youtube_link: "https://www.youtube.com/watch?v=tJ-h8diWiFg",
   },
 
   {
