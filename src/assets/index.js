@@ -74,6 +74,7 @@ import JobHub from "./projects/JobHub/JobHub.png";
 import LibraryKiosk from "./projects/Library Kiosk/LibraryKiosk.png";
 import ProducerConsumer from "./projects/ProducerConsumer/part2.png";
 import DiningPhilosopherandIPC from "./projects/DiningPhilosopherandIPC/diningphil2.png"
+import TCPClientServerFileTransfer from "./projects/TCPClientServerFileTransfer/socket.png";
 
 export {
   logo,
@@ -146,4 +147,5 @@ export {
   LibraryKiosk,
   ProducerConsumer,
   DiningPhilosopherandIPC,
+  TCPClientServerFileTransfer,
 };

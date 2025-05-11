@@ -66,6 +66,7 @@ import {
   LibraryKiosk,
   ProducerConsumer,
   DiningPhilosopherandIPC,
+  TCPClientServerFileTransfer,
 } from "../assets";
 
 export const navLinks = [
@@ -1292,6 +1293,45 @@ const projects = [
     ],
     image: ProducerConsumer,
     source_code_link: "https://github.com/RyanLoi98/ProducerConsumer",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "TCP Client-Server File Transfer",
+    description: `This is my CPSC 441 (Computer Networks - Winter 2023) assignment. This project demonstrates robust TCP 
+    socket programming in C by building a client-server system that performs: User authentication computed via a custom protocol 
+    using a UCID and server timestamp. Secure file transfer from the server to the client only upon successful authentication of 
+    the created passcode. This assignment showcases understanding of TCP networking fundamentals, system calls (socket, bind, listen, 
+    accept, connect, send, recv), error handling, string parsing, and basic protocol design. `,
+    tags: [
+      {
+        name: "C",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TCP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sockets",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Networks",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Client-Server",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Computer Networks",
+        color: "green-text-gradient",
+      },
+    ],
+    image: TCPClientServerFileTransfer,
+    source_code_link: "https://github.com/RyanLoi98/TCPClientServerFileTransfer",
     live_site_link: "",
     youtube_link: "",
   },
