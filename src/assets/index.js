@@ -76,7 +76,7 @@ import ProducerConsumer from "./projects/ProducerConsumer/part2.png";
 import DiningPhilosopherandIPC from "./projects/DiningPhilosopherandIPC/diningphil2.png"
 import TCPClientServerFileTransfer from "./projects/TCPClientServerFileTransfer/socket.png";
 import EFTP from "./projects/EFTP/EFTP.png";
-
+import TicTacToe from "./projects/TicTacToe/TicTacToe.png";
 export {
   logo,
   logo2,
@@ -150,4 +150,5 @@ export {
   DiningPhilosopherandIPC,
   TCPClientServerFileTransfer,
   EFTP,
+  TicTacToe,
 };

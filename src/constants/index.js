@@ -68,6 +68,7 @@ import {
   DiningPhilosopherandIPC,
   TCPClientServerFileTransfer,
   EFTP,
+  TicTacToe,
 } from "../assets";
 
 export const navLinks = [
@@ -1161,7 +1162,7 @@ const projects = [
     youtube_link: "",
   },
 
-   {
+  {
     name: "Dining Philosophers and IPC",
     description: `This is my CPSC 457 (Operating Systems - Fall 2023) assignment exploring concurrency, synchronization, and inter-process communication (IPC) 
     through the implementation of the Dining Philosophers problem in a simulated environment. The project focuses on using semaphores, shared memory, and 
@@ -1176,7 +1177,7 @@ const projects = [
         name: "Dining Philosophers",
         color: "green-text-gradient",
       },
-       {
+      {
         name: "IPC",
         color: "pink-text-gradient",
       },
@@ -1226,7 +1227,8 @@ const projects = [
       },
     ],
     image: DiningPhilosopherandIPC,
-    source_code_link: "https://github.com/RyanLoi98/Dining-Philosopher-and-IPC-Simulation",
+    source_code_link:
+      "https://github.com/RyanLoi98/Dining-Philosopher-and-IPC-Simulation",
     live_site_link: "",
     youtube_link: "",
   },
@@ -1332,7 +1334,8 @@ const projects = [
       },
     ],
     image: TCPClientServerFileTransfer,
-    source_code_link: "https://github.com/RyanLoi98/TCPClientServerFileTransfer",
+    source_code_link:
+      "https://github.com/RyanLoi98/TCPClientServerFileTransfer",
     live_site_link: "",
     youtube_link: "",
   },
@@ -1368,13 +1371,52 @@ const projects = [
         name: "Easy File Transfer Protocol",
         color: "green-text-gradient",
       },
-       {
+      {
         name: "Computer Networks",
         color: "pink-text-gradient",
       },
     ],
     image: EFTP,
     source_code_link: "https://github.com/RyanLoi98/EFTP",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Tic Tac Toe",
+    description: `This is my CPSC 233 (Intro Into Computer Science - Winter 2022) assignment. This assignment involved creating 
+    a fully functional Tic Tac Toe game in Java using a procedural programming approach in order to learn the Java Syntax. 
+    The entire logic is implemented within a single file, TicTacToe.java, using static functions only—no classes or objects. 
+    The game also featured a GUI, and a simple "AI" opponent that is able to play against the user.
+    In addition, unit testing was implemented using JUnit 5 in a separate file, TicTacToeTest.java, to verify the correctness of the game logic.`,
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JUnit 5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tic Tac Toe",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Testing",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "green-text-gradient",
+      },
+    ],
+    image: TicTacToe,
+    source_code_link: "https://github.com/RyanLoi98/TicTacToe",
     live_site_link: "",
     youtube_link: "",
   },
