@@ -1205,19 +1205,19 @@ const projects = [
       },
       {
         name: "Semaphores",
-        color: "pink-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "Mutual Exclusion",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Deadlock",
         color: "pink-text-gradient",
       },
       {
-        name: "Principles of Operating Systems",
+        name: "Deadlock",
         color: "orange-text-gradient",
+      },
+      {
+        name: "Principles of Operating Systems",
+        color: "blue-text-gradient",
       },
     ],
     image: ProducerConsumer,
