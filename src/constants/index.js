@@ -64,6 +64,7 @@ import {
   QuizWhiz,
   JobHub,
   LibraryKiosk,
+  ProducerConsumer,
 } from "../assets";
 
 export const navLinks = [
@@ -1153,6 +1154,75 @@ const projects = [
     ],
     image: ClassScheduler,
     source_code_link: "https://github.com/RyanLoi98/CPSC413A1",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+    {
+    name: "Producer Consumer",
+    description: `This is my CPSC 457 (Principles of Operating Systems - Fall 2023) assignment explores synchronization and concurrency through 
+    the classic Producer-Consumer problem, adapted to a real-world-inspired simulation at the Calgary Carnival. The implementation focuses on 
+    correctly using semaphores, threads, and bounded buffers to avoid race conditions and simulate a coordinated, multithreaded system. It is 
+    divided into two parts. Part 1 implements a single bounded buffer, one producer, one consumer, mutual exclusion, and the user controls the 
+    simulation and the status of the simulation is printed to the terminal. Part 2 implements two bounded buffers, two producer threads, three 
+    consumer threads, and everything is running automatically with the status of the simulation printed to the terminal.`,
+    tags: [
+      {
+        name: "C",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Producer Consumer",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Multi-threading",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Synchronization",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Critical Section",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Zombie Processes",
+        color: "green-text-gradient",
+      },
+      {
+        name: "P Threads",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Concurrency",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Race Condition",
+        color: "blue-text-gradient",
+      },
+ {
+        name: "POSIX",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Semaphores",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mutex",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Principles of Operating Systems",
+        color: "blue-text-gradient",
+      },
+
+    ],
+    image: ProducerConsumer,
+    source_code_link: "https://github.com/RyanLoi98/ProducerConsumer",
     live_site_link: "",
     youtube_link: "",
   },

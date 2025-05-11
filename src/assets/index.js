@@ -72,6 +72,7 @@ import Taleof2Buttons from "./projects/Taleof2Buttons/Taleof2Buttons.png";
 import QuizWhiz from "./projects/QuizWhiz/QuizWhiz.png";
 import JobHub from "./projects/JobHub/JobHub.png";
 import LibraryKiosk from "./projects/Library Kiosk/LibraryKiosk.png";
+import ProducerConsumer from "./projects/ProducerConsumer/part2.png";
 
 export {
   logo,
@@ -142,5 +143,5 @@ export {
   QuizWhiz,
   JobHub,
   LibraryKiosk,
-  
+  ProducerConsumer,
 };
