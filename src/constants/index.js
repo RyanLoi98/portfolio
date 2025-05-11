@@ -1158,7 +1158,7 @@ const projects = [
     youtube_link: "",
   },
 
-    {
+  {
     name: "Producer Consumer",
     description: `This is my CPSC 457 (Principles of Operating Systems - Fall 2023) assignment explores synchronization and concurrency through 
     the classic Producer-Consumer problem, adapted to a real-world-inspired simulation at the Calgary Carnival. The implementation focuses on 
@@ -1187,7 +1187,7 @@ const projects = [
         name: "Critical Section",
         color: "blue-text-gradient",
       },
-       {
+      {
         name: "Zombie Processes",
         color: "green-text-gradient",
       },
@@ -1203,7 +1203,7 @@ const projects = [
         name: "Race Condition",
         color: "blue-text-gradient",
       },
- {
+      {
         name: "POSIX",
         color: "green-text-gradient",
       },
@@ -1216,10 +1216,21 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "Principles of Operating Systems",
+        name: "Mutual Exclusion",
         color: "blue-text-gradient",
       },
-
+       {
+        name: "Race Condition",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Dead Lock",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Principles of Operating Systems",
+        color: "orange-text-gradient",
+      },
     ],
     image: ProducerConsumer,
     source_code_link: "https://github.com/RyanLoi98/ProducerConsumer",
