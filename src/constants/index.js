@@ -1160,12 +1160,11 @@ const projects = [
 
   {
     name: "Producer Consumer",
-    description: `This is my CPSC 457 (Principles of Operating Systems - Fall 2023) assignment explores synchronization and concurrency through 
-    the classic Producer-Consumer problem, adapted to a real-world-inspired simulation at the Calgary Carnival. The implementation focuses on 
-    correctly using semaphores, threads, and bounded buffers to avoid race conditions and simulate a coordinated, multithreaded system. It is 
-    divided into two parts. Part 1 implements a single bounded buffer, one producer, one consumer, mutual exclusion, and the user controls the 
-    simulation and the status of the simulation is printed to the terminal. Part 2 implements two bounded buffers, two producer threads, three 
-    consumer threads, and everything is running automatically with the status of the simulation printed to the terminal.`,
+    description: `This is my CPSC 457 (Operating Systems - Fall 2023) assignment exploring synchronization and concurrency through 
+    the Producer-Consumer problem modeled through a hypothetical ballon stand at a carnival. The implementation focuses on correctly using semaphores, threads, and bounded buffers 
+    to avoid race conditions and simulate a coordinated, multithreaded system. Part 1 implements a single bounded buffer, one producer, one consumer, 
+    mutual exclusion, and the user controls the simulation. Part 2 implements two bounded buffers, two producer threads, three consumer threads, and 
+    everything is running automatically.`,
     tags: [
       {
         name: "C",
