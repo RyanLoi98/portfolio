@@ -1192,7 +1192,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "P Threads",
+        name: "POSIX Threads",
         color: "pink-text-gradient",
       },
       {
@@ -1204,27 +1204,15 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "POSIX",
-        color: "green-text-gradient",
-      },
-      {
         name: "Semaphores",
         color: "pink-text-gradient",
-      },
-      {
-        name: "Mutex",
-        color: "orange-text-gradient",
       },
       {
         name: "Mutual Exclusion",
         color: "blue-text-gradient",
       },
-       {
-        name: "Race Condition",
-        color: "green-text-gradient",
-      },
       {
-        name: "Dead Lock",
+        name: "Deadlock",
         color: "pink-text-gradient",
       },
       {
