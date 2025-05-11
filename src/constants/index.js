@@ -67,6 +67,7 @@ import {
   ProducerConsumer,
   DiningPhilosopherandIPC,
   TCPClientServerFileTransfer,
+  EFTP,
 } from "../assets";
 
 export const navLinks = [
@@ -1332,6 +1333,48 @@ const projects = [
     ],
     image: TCPClientServerFileTransfer,
     source_code_link: "https://github.com/RyanLoi98/TCPClientServerFileTransfer",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Easy File Transfer Protocol (EFTP)",
+    description: `This is my CPSC 441 (Computer Networks - Winter 2023) assignment. This project implements the Easy File Transfer Protocol 
+    (EFTP), a lightweight and custom-designed file transfer protocol built on UDP sockets. Unlike TCP, UDP provides no reliability guarantees, 
+    so this project includes manual implementations of: Reliable delivery (ACKs, retransmissions, timeouts), Packet sequencing, Authentication 
+    and session handling, This assignment demonstrates knowledge of low-level networking concepts, protocol design, and C socket programming using UDP.`,
+    tags: [
+      {
+        name: "C",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "UDP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sockets",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Networks",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Client-Server",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Easy File Transfer Protocol",
+        color: "green-text-gradient",
+      },
+       {
+        name: "Computer Networks",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: EFTP,
+    source_code_link: "https://github.com/RyanLoi98/EFTP",
     live_site_link: "",
     youtube_link: "",
   },

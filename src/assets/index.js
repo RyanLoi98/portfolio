@@ -75,6 +75,7 @@ import LibraryKiosk from "./projects/Library Kiosk/LibraryKiosk.png";
 import ProducerConsumer from "./projects/ProducerConsumer/part2.png";
 import DiningPhilosopherandIPC from "./projects/DiningPhilosopherandIPC/diningphil2.png"
 import TCPClientServerFileTransfer from "./projects/TCPClientServerFileTransfer/socket.png";
+import EFTP from "./projects/EFTP/EFTP.png";
 
 export {
   logo,
@@ -148,4 +149,5 @@ export {
   ProducerConsumer,
   DiningPhilosopherandIPC,
   TCPClientServerFileTransfer,
+  EFTP,
 };
