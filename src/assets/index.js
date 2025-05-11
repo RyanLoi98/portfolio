@@ -73,6 +73,7 @@ import QuizWhiz from "./projects/QuizWhiz/QuizWhiz.png";
 import JobHub from "./projects/JobHub/JobHub.png";
 import LibraryKiosk from "./projects/Library Kiosk/LibraryKiosk.png";
 import ProducerConsumer from "./projects/ProducerConsumer/part2.png";
+import DiningPhilosopherandIPC from "./projects/DiningPhilosopherandIPC/diningphil2.png"
 
 export {
   logo,
@@ -144,4 +145,5 @@ export {
   JobHub,
   LibraryKiosk,
   ProducerConsumer,
+  DiningPhilosopherandIPC,
 };

@@ -65,6 +65,7 @@ import {
   JobHub,
   LibraryKiosk,
   ProducerConsumer,
+  DiningPhilosopherandIPC,
 } from "../assets";
 
 export const navLinks = [
@@ -1154,6 +1155,76 @@ const projects = [
     ],
     image: ClassScheduler,
     source_code_link: "https://github.com/RyanLoi98/CPSC413A1",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+   {
+    name: "Dining Philosophers and IPC",
+    description: `This is my CPSC 457 (Operating Systems - Fall 2023) assignment exploring concurrency, synchronization, and inter-process communication (IPC) 
+    through the implementation of the Dining Philosophers problem in a simulated environment. The project focuses on using semaphores, shared memory, and 
+    message queues to demonstrate process coordination, prevent deadlock, and handle race conditions in a concurrent system. This assignment is split into 2 sections.
+    Section 1 explores IPC creation, and communication using shared memory and message queues. Section 2 tackles the classical dining philosophers problem.`,
+    tags: [
+      {
+        name: "C",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dining Philosophers",
+        color: "green-text-gradient",
+      },
+       {
+        name: "IPC",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Multi-threading",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Synchronization",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Critical Section",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Zombie Processes",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "POSIX Threads",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Concurrency",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Race Condition",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Semaphores",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mutual Exclusion",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Deadlock",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Principles of Operating Systems",
+        color: "green-text-gradient",
+      },
+    ],
+    image: DiningPhilosopherandIPC,
+    source_code_link: "https://github.com/RyanLoi98/Dining-Philosopher-and-IPC-Simulation",
     live_site_link: "",
     youtube_link: "",
   },
