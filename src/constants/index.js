@@ -71,6 +71,7 @@ import {
   TicTacToe,
   MvH,
   editor,
+  Geo,
 } from "../assets";
 
 export const navLinks = [
@@ -1521,6 +1522,45 @@ const projects = [
     live_site_link: "",
     youtube_link: "",
   },
+
+   {
+    name: "Analytical Geometry",
+    description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment. This assignment involved 
+    creating a graphical Python program using the turtle and math libraries to visualize analytical geometry concepts—specifically 
+    the intersection of a line and a circle. The program runs in a graphical window (800x600 pixels), takes user input, draws 
+    coordinate axes, a circle, and a line, and uses mathematical calculations to determine and display intersection points.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Turtle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Analytical Geometry",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Algebra",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Geo,
+    source_code_link: "https://github.com/RyanLoi98/AnalyticalGeometry",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
 ];
 
 export { education, awards, experiences, volunteering, technologies, projects };
