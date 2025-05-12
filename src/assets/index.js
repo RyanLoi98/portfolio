@@ -77,6 +77,8 @@ import DiningPhilosopherandIPC from "./projects/DiningPhilosopherandIPC/diningph
 import TCPClientServerFileTransfer from "./projects/TCPClientServerFileTransfer/socket.png";
 import EFTP from "./projects/EFTP/EFTP.png";
 import TicTacToe from "./projects/TicTacToe/TicTacToe.png";
+import MvH from "./projects/MonstersVsHeroes/MvH.png";
+
 export {
   logo,
   logo2,
@@ -151,4 +153,5 @@ export {
   TCPClientServerFileTransfer,
   EFTP,
   TicTacToe,
+  MvH,
 };

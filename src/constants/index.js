@@ -69,6 +69,7 @@ import {
   TCPClientServerFileTransfer,
   EFTP,
   TicTacToe,
+  MvH,
 } from "../assets";
 
 export const navLinks = [
@@ -1378,6 +1379,66 @@ const projects = [
     ],
     image: EFTP,
     source_code_link: "https://github.com/RyanLoi98/EFTP",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+
+{
+    name: "Monsters Versus Heroes",
+    description: `This is my CPSC 233 (Intro Into Computer Science - Winter 2022) assignment. This project is an object-oriented, 
+    grid-based Monsters vs Heroes simulation written in Java. The game reads a world configuration from a file, places Heroes and 
+    Monsters on a 2D grid, and runs a turn-based simulation of movement and combat. This assignment highlights key object-oriented programming (OOP) concepts including: 
+    Encapsulation, Inheritance, and Polymorphism, Abstract classes and Interfaces, Enumerations for direction, symbols, and weapon types, 
+    File I/O using java.io, Static methods and constants, Unit testing with JUnit 5`,
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JUnit 5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Object Oriented Programming",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Encapsulation",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Inheritance",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Abstract Classes",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Input/Output",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Polymorphism",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ENUMS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: MvH,
+    source_code_link: "https://github.com/RyanLoi98/MonstersVersusHeroes",
     live_site_link: "",
     youtube_link: "",
   },
