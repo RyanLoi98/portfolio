@@ -29,7 +29,7 @@ const ProjectCard = ({
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl xl:w-[365px] lg:w-[434px] sm:w-[570px] w-full xl:min-h-[831px] lg:min-h-[760px] mb-5 flex flex-col"
+        className="bg-tertiary p-5 rounded-2xl xl:w-[365px] lg:w-[434px] sm:w-[570px] w-full xl:min-h-[838px] lg:min-h-[760px] mb-5 flex flex-col"
       >
         <div className="relative w-fill h-[230px]">
           <img

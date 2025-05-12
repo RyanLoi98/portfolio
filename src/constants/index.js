@@ -1177,56 +1177,44 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Dining Philosophers",
-        color: "green-text-gradient",
-      },
-      {
         name: "IPC",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Multi-threading",
-        color: "orange-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "Synchronization",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Critical Section",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Zombie Processes",
         color: "pink-text-gradient",
       },
-      {
+          {
         name: "POSIX Threads",
         color: "orange-text-gradient",
       },
       {
-        name: "Concurrency",
+        name: "Zombie Processes",
         color: "blue-text-gradient",
+      },
+      {
+        name: "Concurrency",
+        color: "green-text-gradient",
       },
       {
         name: "Race Condition",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Semaphores",
         color: "pink-text-gradient",
       },
       {
-        name: "Mutual Exclusion",
+        name: "Semaphores",
         color: "orange-text-gradient",
       },
       {
-        name: "Deadlock",
+        name: "Mutual Exclusion",
         color: "blue-text-gradient",
       },
       {
-        name: "Principles of Operating Systems",
+        name: "Deadlock",
         color: "green-text-gradient",
+      },
+      {
+        name: "Principles of Operating Systems",
+        color: "pink-text-gradient",
       },
     ],
     image: DiningPhilosopherandIPC,
