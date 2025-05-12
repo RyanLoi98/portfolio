@@ -80,6 +80,7 @@ import TicTacToe from "./projects/TicTacToe/TicTacToe.png";
 import MvH from "./projects/MonstersVsHeroes/MvH.png";
 import editor from "./projects/MvHEditor/editor.png";
 import Geo from "./projects/AnalyticalGeometry/Geo.png";
+import Graphing from "./projects/Graphing/Graphing.png";
 
 export {
   logo,
@@ -158,4 +159,5 @@ export {
   MvH,
   editor,
   Geo,
+  Graphing,
 };

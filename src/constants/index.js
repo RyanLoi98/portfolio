@@ -72,6 +72,7 @@ import {
   MvH,
   editor,
   Geo,
+  Graphing,
 } from "../assets";
 
 export const navLinks = [
@@ -1184,7 +1185,7 @@ const projects = [
         name: "Synchronization",
         color: "pink-text-gradient",
       },
-          {
+      {
         name: "POSIX Threads",
         color: "orange-text-gradient",
       },
@@ -1511,9 +1512,48 @@ const projects = [
     youtube_link: "",
   },
 
-   {
+  {
+    name: "Graphing Calculator",
+    description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment 2. This assignment involved implementing a 
+    graphing calculator using Python 3 and the turtle graphics library. Building on concepts from Assignment 1 
+    (https://github.com/RyanLoi98/AnalyticalGeometry), this project required enhanced skills in coordinate transformations, 
+    looping, function completion, and expression evaluation. The core objective was to complete a set of modular drawing and utility 
+    functions to generate graphical plots of user-defined expressions in a Cartesian space - just like a graphing calculator.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Turtle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Analytical Geometry",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Algebra",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Graphing,
+    source_code_link: "https://github.com/RyanLoi98/GraphingCalculator",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
     name: "Analytical Geometry",
-    description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment. This assignment involved 
+    description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment 1. This assignment involved 
     creating a graphical Python program using the turtle and math libraries to visualize analytical geometry concepts—specifically 
     the intersection of a line and a circle. The program runs in a graphical window (800x600 pixels), takes user input, draws 
     coordinate axes, a circle, and a line, and uses mathematical calculations to determine and display intersection points.`,
@@ -1548,7 +1588,6 @@ const projects = [
     live_site_link: "",
     youtube_link: "",
   },
-
 ];
 
 export { education, awards, experiences, volunteering, technologies, projects };
