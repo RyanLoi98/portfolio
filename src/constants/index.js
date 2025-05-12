@@ -70,6 +70,7 @@ import {
   EFTP,
   TicTacToe,
   MvH,
+  editor,
 } from "../assets";
 
 export const navLinks = [
@@ -1383,8 +1384,47 @@ const projects = [
     youtube_link: "",
   },
 
+  {
+    name: "Monsters Versus Heroes Map Maker",
+    description: `This is my CPSC 233 (Intro Into Computer Science - Winter 2022) assignment 3. This project is an Object-Oriented Java-based Map 
+    Making utility designed to support the Monsters vs Heroes simulation game (https://github.com/RyanLoi98/MonstersVersusHeroes). 
+    The program allows users to build a custom game world interactively and then save it to a file in the correct format for simulation. 
+    It reinforces object-oriented design and GUI programming through: Object creation and grid management, JavaFX GUI interface, User interaction 
+    through input fields and buttons, File I/O operations for saving world files.
+`,
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaFX",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Object Oriented Programming",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Input/Output",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "green-text-gradient",
+      },
+    ],
+    image: editor,
+    source_code_link: "https://github.com/RyanLoi98/MonstersVersusHeroesEditor",
+    live_site_link: "",
+    youtube_link: "",
+  },
 
-{
+  {
     name: "Monsters Versus Heroes",
     description: `This is my CPSC 233 (Intro Into Computer Science - Winter 2022) assignment. This project is an object-oriented, 
     grid-based Monsters vs Heroes simulation written in Java. The game reads a world configuration from a file, places Heroes and 

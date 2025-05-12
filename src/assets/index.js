@@ -78,6 +78,7 @@ import TCPClientServerFileTransfer from "./projects/TCPClientServerFileTransfer/
 import EFTP from "./projects/EFTP/EFTP.png";
 import TicTacToe from "./projects/TicTacToe/TicTacToe.png";
 import MvH from "./projects/MonstersVsHeroes/MvH.png";
+import editor from "./projects/MvHEditor/editor.png";
 
 export {
   logo,
@@ -154,4 +155,5 @@ export {
   EFTP,
   TicTacToe,
   MvH,
+  editor,
 };
