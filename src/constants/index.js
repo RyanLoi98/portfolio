@@ -73,6 +73,7 @@ import {
   editor,
   Geo,
   Graphing,
+  StarPlotter,
 } from "../assets";
 
 export const navLinks = [
@@ -1511,6 +1512,46 @@ const projects = [
     live_site_link: "",
     youtube_link: "",
   },
+
+  {
+    name: "Star Plotter",
+    description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment 3. This assignment involved 
+    developing a Python graphics application that reads data from star and constellation files to draw a map of the night 
+    sky. Using the turtle graphics module, the program plots stars based on magnitude, names them (optionally), and connects 
+    named stars with constellation edges. The project reinforces command-line argument handling, structured file I/O, 
+    data-driven drawing, and modular program design.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Turtle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "File I/O",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSV Parsing",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "green-text-gradient",
+      },
+    ],
+    image: StarPlotter,
+    source_code_link: "https://github.com/RyanLoi98/Star-Plotter",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
 
   {
     name: "Graphing Calculator",

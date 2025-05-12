@@ -81,6 +81,7 @@ import MvH from "./projects/MonstersVsHeroes/MvH.png";
 import editor from "./projects/MvHEditor/editor.png";
 import Geo from "./projects/AnalyticalGeometry/Geo.png";
 import Graphing from "./projects/Graphing/Graphing.png";
+import StarPlotter from "./projects/StarPlotter/StarPlotter.png";
 
 export {
   logo,
@@ -160,4 +161,6 @@ export {
   editor,
   Geo,
   Graphing,
+  StarPlotter,
+  
 };
