@@ -74,6 +74,7 @@ import {
   Geo,
   Graphing,
   StarPlotter,
+  Huffman,
 } from "../assets";
 
 export const navLinks = [
@@ -1514,6 +1515,53 @@ const projects = [
   },
 
   {
+    name: "Huffman Compression",
+    description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment 4. This assignment focused 
+    on implementing Huffman Coding to compress ASCII text files using Python. Huffman Coding is a greedy algorithm that 
+    assigns shorter binary codes to more frequent characters, producing optimal (minimal-byte) compression for single-character symbols. 
+    Students were provided with a partially completed program and were required to complete two key classes: HuffmanTree and EncodingTable. 
+    These classes encapsulate the structure and logic necessary for building a Huffman Tree, generating a binary encoding table, and compressing text.`,
+    tags: [
+      {
+        name: "Python3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Huffman Trees",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "File I/O",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Greedy Algorithms",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Recursion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Object Oriented Programming",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Introduction to Computer Science",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: Huffman,
+    source_code_link: "https://github.com/RyanLoi98/Huffman-Compression",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
     name: "Star Plotter",
     description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment 3. This assignment involved 
     developing a Python graphics application that reads data from star and constellation files to draw a map of the night 
@@ -1551,7 +1599,6 @@ const projects = [
     live_site_link: "",
     youtube_link: "",
   },
-
 
   {
     name: "Graphing Calculator",
