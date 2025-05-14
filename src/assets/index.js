@@ -83,6 +83,7 @@ import Geo from "./projects/AnalyticalGeometry/Geo.png";
 import Graphing from "./projects/Graphing/Graphing.png";
 import StarPlotter from "./projects/StarPlotter/StarPlotter.png";
 import Huffman from "./projects/Huffman/Huff.png";
+import Shell from "./projects/Shell Scripts/Shell.png";
 
 export {
   logo,
@@ -164,4 +165,5 @@ export {
   Graphing,
   StarPlotter,
   Huffman,
+  Shell,
 };

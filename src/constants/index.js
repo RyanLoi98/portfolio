@@ -75,6 +75,7 @@ import {
   Graphing,
   StarPlotter,
   Huffman,
+  Shell,
 } from "../assets";
 
 export const navLinks = [
@@ -1673,6 +1674,37 @@ const projects = [
     ],
     image: Geo,
     source_code_link: "https://github.com/RyanLoi98/AnalyticalGeometry",
+    live_site_link: "",
+    youtube_link: "",
+  },
+
+  {
+    name: "Shell Scripts",
+    description: `This is my CPSC 457 (Operating Systems - Fall 2023) assignment on shell scripts. This assignment 
+    introduced the fundamentals of shell scripting using Bash, a powerful command-line tool used in Unix-like operating systems. 
+    The goal was to develop multiple utility scripts that demonstrate practical skills in command-line programming, file system 
+    manipulation, and script-based automation. By completing these tasks, I explored core scripting concepts such as variable 
+    handling, conditional logic, arithmetic evaluation, filesystem traversal, and use of built-in Linux utilities like find, chmod, and du.`,
+    tags: [
+      {
+        name: "Shell Script",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Linux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Command Line",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "UNIX Permissions",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: Shell,
+    source_code_link: "https://github.com/RyanLoi98/Shell-Script",
     live_site_link: "",
     youtube_link: "",
   },
