@@ -1433,7 +1433,7 @@ const projects = [
   {
     name: "Monsters Versus Heroes Map Maker",
     description: `This is my CPSC 233 (Intro Into Computer Science - Winter 2022) assignment 3. This project is an Object-Oriented Java-based Map 
-    Making utility designed to support the Monsters vs Heroes simulation game (https://github.com/RyanLoi98/MonstersVersusHeroes). 
+    Making utility designed to support the Monsters vs Heroes simulation game (featured below). 
     The program allows users to build a custom game world interactively and then save it to a file in the correct format for simulation. 
     It reinforces object-oriented design and GUI programming through: Object creation and grid management, JavaFX GUI interface, User interaction 
     through input fields and buttons, File I/O operations for saving world files.
@@ -1658,7 +1658,7 @@ const projects = [
     name: "Graphing Calculator",
     description: `This is my CPSC 231 (Intro Into Computer Science - Fall 2021) assignment 2. This assignment involved implementing a 
     graphing calculator using Python 3 and the turtle graphics library. Building on concepts from Assignment 1 
-    (https://github.com/RyanLoi98/AnalyticalGeometry), this project required enhanced skills in coordinate transformations, 
+    (called "Analytical Geometry"), this project required enhanced skills in coordinate transformations, 
     looping, function completion, and expression evaluation. The core objective was to complete a set of modular drawing and utility 
     functions to generate graphical plots of user-defined expressions in a Cartesian space - just like a graphing calculator.`,
     tags: [
