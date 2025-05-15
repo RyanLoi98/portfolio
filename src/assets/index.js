@@ -84,6 +84,7 @@ import Graphing from "./projects/Graphing/Graphing.png";
 import StarPlotter from "./projects/StarPlotter/StarPlotter.png";
 import Huffman from "./projects/Huffman/Huff.png";
 import Shell from "./projects/Shell Scripts/Shell.png";
+import Expertz from "./projects/Expertz/Expertz.png";
 
 export {
   logo,
@@ -166,4 +167,5 @@ export {
   StarPlotter,
   Huffman,
   Shell,
+  Expertz,
 };

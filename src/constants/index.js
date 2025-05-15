@@ -76,6 +76,7 @@ import {
   StarPlotter,
   Huffman,
   Shell,
+  Expertz,
 } from "../assets";
 
 export const navLinks = [
@@ -619,6 +620,58 @@ const projects = [
     source_code_link: "https://github.com/RyanLoi98/HobbyHub",
     live_site_link: "",
     youtube_link: "https://youtu.be/QE0Vf02w0C8",
+  },
+
+  {
+    name: "Expertz",
+    description: `Expertz is a Swift-based iOS application connecting skilled professionals with clients. 
+    The platform provides a seamless, location-driven experience to discover, chat with, and securely pay 
+    verified experts across a range of services. Built with Apple MapKit, Google Firebase, and Core Location, 
+    Expertz features a verified review system (restricted to paying clients only), unbiased search results, and 
+    an AliExpress-style escrow payment system. The app is currently in development with a working version featuring many 
+    of the promised features and has ongoing improvements.`,
+    tags: [
+      {
+        name: "Swift",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SwiftUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "UIKit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Core Location",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MapKit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase Authentication",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firestore",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mobile Development",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "IOS Development",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Expertz,
+    source_code_link: "https://github.com/RyanLoi98/Expertz",
+    live_site_link: "",
+    youtube_link: "",
   },
 
   {
