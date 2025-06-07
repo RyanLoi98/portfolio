@@ -937,7 +937,7 @@ const projects = [
     ],
     image: Taleof2Buttons,
     source_code_link: "https://github.com/RyanLoi98/ATaleof2Buttons",
-    live_site_link: "https://a-tale-of-2-buttons.glitch.me",
+    live_site_link: "https://a-taleof2-buttons.vercel.app/",
     youtube_link: "https://youtu.be/PXKVLONcRb4",
   },
 
