@@ -898,7 +898,7 @@ const projects = [
     ],
     image: CreativePhoneUnlock,
     source_code_link: "https://github.com/RyanLoi98/CreativePhoneUnlock",
-    live_site_link: "https://creative-phone-unlock.glitch.me/",
+    live_site_link: "https://creative-phone-unlock.vercel.app/",
     youtube_link: "https://www.youtube.com/watch?v=tJ-h8diWiFg",
   },
 
