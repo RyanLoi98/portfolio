@@ -852,7 +852,7 @@ const projects = [
     ],
     image: GuardianAngel,
     source_code_link: "https://github.com/RyanLoi98/GuardianAngel",
-    live_site_link: "https://cpsc-581-individual-project.glitch.me",
+    live_site_link: "https://guardianangel.vercel.app/",
     youtube_link: "https://www.youtube.com/watch?v=8Nj8ePU1TnI",
   },
 
