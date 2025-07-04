@@ -194,7 +194,7 @@ const experiences = [
     company_name: "Advance Hair Salon (Calgary, Canada)",
     icon: AdvanceHairSalonLogo,
     iconBg: "#525c82",
-    date: "July 2013 - May 2024",
+    date: "Sept 2012 - May 2024",
     duration: "10 years, 10 months",
     points: [
       "Delivered outstanding front-desk service by responding to client inquiries, coordinating high-volume appointment schedules, and cultivating a welcoming environment for all guests.",
