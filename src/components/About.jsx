@@ -195,7 +195,7 @@ const About = () => {
         long continuous learning, I’m always looking for efficient, elegant ways
         to refine and elevate my craft. <br />
         <br />
-        Have a question or want to collaborate? Let's{' '}
+        Have any questions? Let's{' '}
         <a
           href='#contact'
           className='text-blue-400 underline hover:text-blue-600'
