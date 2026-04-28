@@ -193,7 +193,7 @@ const About = () => {
         power my development workflow. Driven by a commitment to unrelenting
         excellence, passion for open source technology, and devotion to life
         long continuous learning, I’m always looking for efficient, elegant ways
-        to refine my craft. <br />
+        to refine and elevate my craft. <br />
         <br />
         Have a question or want to collaborate? Let's{' '}
         <a
