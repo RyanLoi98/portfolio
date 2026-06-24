@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import {About, Contact, Experience, Hero, Navbar, Skills, Work, StarsCanvas, Credit} from "./components";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         </div>
         <Credit />
       </div>
+      <Analytics />
     </BrowserRouter>
   )
 }
