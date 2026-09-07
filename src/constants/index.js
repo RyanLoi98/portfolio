@@ -214,23 +214,6 @@ const experiences = [
       standards of reliability and excellence expected of the Canonical brand.`,
 		],
 	},
-	{
-		title: 'Customer Experience & Administrative Lead',
-		company_name: 'Advance Hair Salon (Calgary, Canada)',
-		url: '',
-		icon: AdvanceHairSalonLogo,
-		iconBg: '#525c82',
-		date: 'Sept 2012 - May 2024',
-		duration: '10 years, 10 months',
-		points: [
-			'Delivered outstanding front-desk service by responding to client inquiries, coordinating high-volume appointment schedules, and cultivating a welcoming environment for all guests.',
-			'Upheld salon cleanliness by supervising sanitation protocols, laundering towels, and arranging workstations to exceed health and safety standards.',
-			'Streamlined supply chain operations by ordering salon products, monitoring inventory levels, and liaising with vendors to optimize cost efficiency.',
-			'Administered daily financial tasks, including cash reconciliation, transaction accuracy, and bookkeeping to support reliable financial documentation.',
-			'Facilitated onboarding and mentorship for new staff, training them on internal procedures, client engagement best practices, and POS systems.',
-			'Orchestrated weekly staff meetings to align team goals, set measurable performance benchmarks, and promote a culture of collaboration and accountability.',
-		],
-	},
 ];
 
 const volunteering = [
